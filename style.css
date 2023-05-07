@@ -1,15 +1,18 @@
-* {
+/** {
   padding: 0;
   margin: 0;
-}
+}*/
+
 body {
   background-color: #11232f;
   min-width: 300px;
 }
+
 .header-imagem-conteudo {
   width: 100%;
   height: 150px;
 }
+
 .navegacao {
   height: auto;
   display: flex;
@@ -25,6 +28,7 @@ body {
   position: relative;
   bottom: 3vh;
 }
+
 .navegacao-conteudo {
   width: 100%;
   height: 100%;
@@ -35,13 +39,16 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 .navegacao-conteudo:hover {
   border: 2px solid #a7b3ba;
 }
+
 .navegacao-conteudo-texto {
   color: #a7b3ba;
   text-decoration: none;
 }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -52,23 +59,28 @@ body {
   border-radius: 15px;
   gap: 20px;
 }
+
 .main-conteudo {
   position: relative;
 }
+
 .main-conteudo-imagem-principal {
   width: 100px;
   height: 100px;
 }
+
 .main-conteudo-texto-principal {
   font-weight: bold;
   font-size: 20px;
 }
+
 .main-conteudo-texto-secundario {
   margin-left: 80px;
   margin-right: 80px;
   font-size: 17px;
   text-align: center;
 }
+
 .main-conteudo-imagem-assinatura {
   width: 200px;
   height: 70px;
@@ -77,6 +89,7 @@ body {
   left: 70vh;
   top: 0;
 }
+
 .main-conteudo-imagem-selo {
   position: relative;
   top: 10vh;
@@ -87,59 +100,72 @@ body {
   margin-left: 50px;
   margin-bottom: 20px;
 }
+
 @media (max-height: 1400px) {
   .main-conteudo-imagem-assinatura {
     left: 17vh;
     top: 0;
   }
+
   .main-conteudo-imagem-selo {
     top: 5vh;
   }
 }
+
 @media (max-width: 1080px) {
   .navegacao {
     height: auto;
   }
 }
+
 @media (max-height: 920px) {
   .main-conteudo-imagem-selo {
     top: 5vh;
   }
 }
+
 @media (max-width: 900px) {
   .main-conteudo-imagem-assinatura {
     left: 50vh;
   }
 }
+
 @media (max-height: 1025px) {
   .main-conteudo-imagem-assinatura {
     left: 20vh;
     top: 0;
   }
 }
+
 @media (max-width: 730px) {
   .navegacao {
     height: auto;
   }
+
   .navegacao-conteudo-texto {
     font-size: 10px;
   }
+
   .navegacao-conteudo-texto {
     color: #a7b3ba;
     text-decoration: none;
     font-size: 10px;
   }
+
   .main-conteudo-imagem-assinatura {
     left: 30vh;
   }
+
   .main-conteudo-imagem-selo {
     width: 100px;
     height: 100px;
   }
+
   .footer-texto {
     font-size: 13px;
   }
 }
+
 @media (max-width: 570px) {
   .navegacao {
     height: auto;
@@ -152,30 +178,36 @@ body {
     gap: 10px;
     bottom: 5vh;
   }
+
   .navegacao-conteudo-texto {
     color: #a7b3ba;
     text-decoration: none;
     font-size: 10px;
     margin: 2px;
   }
+
   .main-conteudo-texto-principal {
     font-weight: bold;
     font-size: 15px;
     text-align: center;
   }
+
   .main-conteudo-texto-secundario {
     font-size: 13px;
     text-align: none;
   }
+
   .main-conteudo-imagem-assinatura {
     left: 0;
     width: 150px;
     height: 50px;
   }
+
   .main-conteudo-imagem-selo {
     width: 75px;
     height: 75px;
   }
+
   .footer-texto {
     color: #a7b3ba;
     margin-left: 0px;
