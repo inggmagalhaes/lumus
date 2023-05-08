@@ -49,7 +49,7 @@ body {
   text-decoration: none;
 }
 
-.main {
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,28 +60,28 @@ body {
   gap: 20px;
 }
 
-.main-conteudo {
+.section-conteudo {
   position: relative;
 }
 
-.main-conteudo-imagem-principal {
+.section-conteudo-imagem-principal {
   width: 100px;
   height: 100px;
 }
 
-.main-conteudo-texto-principal {
+.section-conteudo-texto-principal {
   font-weight: bold;
   font-size: 20px;
 }
 
-.main-conteudo-texto-secundario {
+.section-conteudo-texto-secundario {
   margin-left: 80px;
   margin-right: 80px;
   font-size: 17px;
   text-align: center;
 }
 
-.main-conteudo-imagem-assinatura {
+.section-conteudo-imagem-assinatura {
   width: 200px;
   height: 70px;
   margin-top: 20px;
@@ -90,7 +90,7 @@ body {
   top: 0;
 }
 
-.main-conteudo-imagem-selo {
+.section-conteudo-imagem-selo {
   position: relative;
   top: 10vh;
 }
@@ -102,12 +102,12 @@ body {
 }
 
 @media (max-height: 1400px) {
-  .main-conteudo-imagem-assinatura {
+  .section-conteudo-imagem-assinatura {
     left: 17vh;
     top: 0;
   }
 
-  .main-conteudo-imagem-selo {
+  .section-conteudo-imagem-selo {
     top: 5vh;
   }
 }
@@ -119,19 +119,19 @@ body {
 }
 
 @media (max-height: 920px) {
-  .main-conteudo-imagem-selo {
+  .section-conteudo-imagem-selo {
     top: 5vh;
   }
 }
 
 @media (max-width: 900px) {
-  .main-conteudo-imagem-assinatura {
+  .section-conteudo-imagem-assinatura {
     left: 50vh;
   }
 }
 
 @media (max-height: 1025px) {
-  .main-conteudo-imagem-assinatura {
+  .section-conteudo-imagem-assinatura {
     left: 20vh;
     top: 0;
   }
@@ -152,11 +152,11 @@ body {
     font-size: 10px;
   }
 
-  .main-conteudo-imagem-assinatura {
+  .section-conteudo-imagem-assinatura {
     left: 30vh;
   }
 
-  .main-conteudo-imagem-selo {
+  .section-conteudo-imagem-selo {
     width: 100px;
     height: 100px;
   }
