@@ -1,11 +1,16 @@
 body {
-    background-image: url(../lumus/imagens/fundo/papel_antigo.png);
+    margin-left: 30px; background-color: black ;
+    padding-left: 30px; background-color: black;
+    background-image: url(../lumus/imagens/fundo/Old\ paper.jpg);
     background-attachment: fixed;
     /* background-repeat: no-repeat; */
     min-width: 300px;
     align-items: center;
     justify-content: center;
+    padding-left: 30px; background-color: black;
+    padding-right: 30px; background-color: black;
 }
+
 
 .header-imagem-conteudo {
     width: 100%;
