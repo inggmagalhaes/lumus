@@ -79,10 +79,21 @@ h1 {
     margin: 10px 0 30px 0;
 }
 
+.section-conteudo h1 {
+    text-transform: uppercase;
+}
+
+.posters {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .section-conteudo h4,
 li {
     font-style: italic;
 }
+
 
 
 .conteudo-galeria {
