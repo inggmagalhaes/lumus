@@ -60,6 +60,7 @@ body {
   border: 2px solid transparent;
   border-radius: 15px;
   gap: 20px;
+  background-image: url("./imagens/fundo/pergaminho.jpeg");
 }
 
 .section-conteudo {
