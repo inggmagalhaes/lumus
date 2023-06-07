@@ -296,6 +296,11 @@ footer p {
 
     .navegacao ul li a {
         width: auto;
+        display: block;
+    }
+
+    .main {
+        padding: 0 30px 100px 30px;
     }
 
     .section-conteudo img {
