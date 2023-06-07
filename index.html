@@ -21,16 +21,26 @@
     <link rel="shortcut icon" href="./imagens/favicon.png" />
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
+
     <header class="header">
         <div class="header-imagem">
-            <img src="./imagens/Header/Home-3.png" alt="" class="header-imagem-conteudo">
+            <img src="imagens/Header/HOME-3.png" alt="" class="header-imagem-conteudo" />
         </div>
+
     </header>
-    <span class="material-symbols-outlined">
-        menu
-    </span>
-    <nav class="navegacao">
+
+    <div class="menu-icon" onclick="clickMenu()">
+        <div class="center-lines">
+
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+        </div>
+    </div>
+
+
+    <nav id="menu" class="navegacao">
         <ul class="navegacao-ul">
             <li class="navegacao-conteudo">
                 <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
