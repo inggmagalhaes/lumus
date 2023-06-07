@@ -14,6 +14,18 @@ body {
   height: auto;
 }
 
+/* essa classe abaixo é do ícone do menu HAMBURGUER */
+span .material-symbols-outlined {
+  display: none;
+  background-color: #fcf5e7;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+
 .navegacao-ul {
   height: 50px;
   display: flex;

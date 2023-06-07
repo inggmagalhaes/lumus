@@ -29,9 +29,10 @@ li {
 }
 
 
+
 .navegacao ul {
 
-    height: 50px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -168,13 +169,17 @@ footer p {
 
 @media screen and (max-width:1024px) {
     .navegacao ul {
-        height: 50px;
+        height: 40px;
 
         font-size: 11px;
     }
 
-    .navegacao ul li a {
+    .navegacao ul li {
         width: 90px;
+    }
+
+    .navegacao ul li a {
+        width: auto;
     }
 
     .main {
@@ -211,9 +216,64 @@ footer p {
 
 @media screen and (max-width:780px) {
 
+    body {
+        min-width: 500px;
+    }
+
+
+
+
     .navegacao-conteudo {
 
         margin: 0;
+    }
+
+    .menu-icon {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        background-color: #143446;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        top: -5px;
+        cursor: pointer;
+    }
+
+    .menu-icon:hover {
+        background-color: #215370;
+    }
+
+
+
+    .center-lines {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 2px 0;
+
+    }
+
+    .line-1,
+    .line-2,
+    .line-3 {
+        position: relative;
+
+        width: 30px;
+        height: 2px;
+        background-color: #a7b3ba;
+        border-radius: 3px;
+
+    }
+
+    #menu {
+        display: none;
     }
 
     .navegacao ul {
@@ -225,6 +285,7 @@ footer p {
         grid-template-rows: repeat(4, 20px);
         gap: 5px;
         height: auto;
+        border-radius: 5px;
         bottom: 2vh;
     }
 
@@ -245,5 +306,4 @@ footer p {
         width: 400px;
         height: 265px;
     }
-
 }
