@@ -241,7 +241,7 @@ footer p {
         border-radius: 5px;
         margin-bottom: 5px;
         position: relative;
-        top: -5px;
+        top: -20px;
         cursor: pointer;
     }
 
@@ -286,6 +286,7 @@ footer p {
         gap: 5px;
         height: auto;
         border-radius: 5px;
+        top: -20px;
         bottom: 2vh;
     }
 
@@ -301,6 +302,8 @@ footer p {
 
     .main {
         padding: 0 30px 100px 30px;
+        position: relative;
+        top: -10px;
     }
 
     .section-conteudo img {
