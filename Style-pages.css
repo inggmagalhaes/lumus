@@ -92,7 +92,61 @@ li {
     padding: 0 100px 100px 100px;
 }
 
+.livro {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+
+.livro-capa {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    padding-right: 50px;
+}
+
+.livro-info {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    border-radius: 2px;
+    padding-top: 20px;
+
+    padding-left: 50px;
+    align-items: flex-start;
+}
+
+.livro-info-line h3 {
+    background-color: #215370;
+    color: white;
+    font-weight: 200;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.livro-info-line h4,
+h3 {
+    font-style: normal;
+    margin: 2px;
+    color: #143446;
+}
+
+.livro-info-line p {
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.livro-info-line {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .section-conteudo {
+    margin-top: 20px;
     padding: 2%;
     display: flex;
     flex-direction: column;
@@ -113,7 +167,19 @@ h1 {
 
 .section-conteudo h1 {
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
+
+.section-conteudo h2 {
+    display: block;
+    border-bottom: solid 1px #215370;
+    margin-bottom: 50px;
+}
+
+.full {
+    width: 100%;
+}
+
 
 .posters {
     width: 500px;
@@ -128,6 +194,7 @@ h1 {
 .section-conteudo iframe {
     width: 700px;
     height: 465px;
+
 }
 
 .curiosidades li {
@@ -187,8 +254,16 @@ footer p {
         padding: 0 60px 90px 60px;
     }
 
+    .livro-capa {
+        padding-right: 80px;
+    }
+
+    .livro-info {
+        padding-left: 0;
+    }
+
     .section-conteudo img {
-        height: 350px;
+        height: 400px;
     }
 
     .section-conteudo iframe {
@@ -277,7 +352,7 @@ footer p {
     }
 
     .navegacao ul {
-        font-size: 12px;
+        font-size: 13px;
         padding: 5px;
         height: auto;
         display: grid;
@@ -306,8 +381,23 @@ footer p {
         top: -10px;
     }
 
+    .livro {
+        display: flex;
+        justify-content: center;
+    }
+
+    .livro-capa {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .livro-info {
+        display: none;
+    }
+
     .section-conteudo img {
-        height: 250px;
+        height: 300px;
     }
 
     .section-conteudo iframe {

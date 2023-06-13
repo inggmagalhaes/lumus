@@ -151,7 +151,7 @@
     }
 
     #slides {
-        max-width: calc(100% - 100px);
+        max-width: calc(100% - 50px);
         margin: 0 auto;
     }
 }
