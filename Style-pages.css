@@ -23,6 +23,10 @@ li {
     font-family: 'EB Garamond', serif;
 }
 
+h1 {
+    font-size: 35px;
+}
+
 .header img {
     width: 100%;
     height: auto;
@@ -235,6 +239,10 @@ footer p {
 }
 
 @media screen and (max-width:1024px) {
+    h1 {
+        font-size: 28px;
+    }
+
     .navegacao ul {
         height: 40px;
 
@@ -295,7 +303,9 @@ footer p {
         min-width: 500px;
     }
 
-
+    h1 {
+        font-size: 25px;
+    }
 
 
     .navegacao-conteudo {
@@ -381,7 +391,7 @@ footer p {
         top: -10px;
     }
 
-    .livro {
+    div.livro {
         display: flex;
         justify-content: center;
     }
