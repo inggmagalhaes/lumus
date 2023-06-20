@@ -9,12 +9,15 @@
     <meta name="description"
         content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="menu.js"></script>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond&family=Noto+Serif&display=swap"
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter&family=Fasthand&family=EB+Garamond&family=Noto+Serif&display=swap"
         rel="stylesheet">
 
     <title>Universo HP</title>
@@ -44,7 +47,7 @@
 
 
     <nav id="menu" class="navegacao">
-        <ul class="navegacao-ul">
+        <ul>
             <li class="navegacao-conteudo">
                 <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
             </li>
@@ -72,36 +75,28 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main class="main">
         <section class="section">
-            <div class="section-conteudo"></div>
-            <img src="imagens/logo-hogwarts.png" alt="logotipo de hogwarts" class="section-conteudo-imagem-principal" />
-            </div>
-            <div class="section-conteudo">
-                <h1 class="section-conteudo-texto-principal">
-                    SEJA BEM VINDO AO MUNDO HARRY POTTER
-                </h1>
-            </div>
-            <div class="section-conteudo">
-                <h3 class="section-conteudo-texto-secundario">
-                    Aqui você encontrará tudo sobre o universo do Harry Potter, como as
-                    histórias dos livros, onde comprá-los, capas ao redor do mundo, onde
-                    assistir os filmes e até uma galeria de fotos e curiosidades
-                    exclusivas.
-                </h3>
-            </div>
-            <div class="section-conteudo">
-                <img src="imagens/Albus.png" alt="assinatura Albus Dumbledore"
-                    class="section-conteudo-imagem-assinatura" />
-            </div>
-            <div class="section-conteudo">
 
+            <img id="logo-hogwarts" src="imagens/logo-hogwarts.png" alt="logotipo de hogwarts" />
+            <h1>
+                SEJA BEM VINDO AO MUNDO HARRY POTTER
+            </h1>
+            <p>
+                Aqui você encontrará tudo sobre o universo do Harry Potter, como as
+                histórias dos livros, onde comprá-los, capas ao redor do mundo, onde
+                assistir os filmes e até uma galeria de fotos e curiosidades
+                exclusivas.
+            </p>
+            <div class="assinatura">
+                <img src="imagens/Albus.png" alt="assinatura Albus Dumbledore" />
             </div>
         </section>
+
     </main>
     <footer class="footer">
-        <img src="imagens/footer-selo.png" alt="selo de hogwarts" class="footer-imagem" />
-        <h5 class="footer-texto">Copyright &copy Harry Potter 2023</h5>
+        <img src="imagens/footer-selo.png" alt="selo de hogwarts" />
+        <p class="footer-texto">Copyright &copy Harry Potter 2023</p>
     </footer>
 </body>
 

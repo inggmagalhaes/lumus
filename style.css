@@ -4,17 +4,36 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   background-color: #0a1417;
-  min-width: 300px;
-  font-family: "Noto Serif", serif;
+  min-width: 400px;
+  max-width: 1300px;
+  width: 100%;
+  text-align: justify;
+  font-family: 'Noto Serif', serif;
 }
 
-.header-imagem-conteudo {
+h1,
+h2,
+h3,
+h4,
+li {
+
+  font-family: 'EB Garamond', serif;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.header img {
   width: 100%;
   height: auto;
 }
 
-/* essa classe abaixo é do ícone do menu HAMBURGUER */
+/* 
 span .material-symbols-outlined {
   display: none;
   background-color: #fcf5e7;
@@ -25,7 +44,9 @@ span .material-symbols-outlined {
     'opsz' 48
 }
 
+*/
 
+/* 
 .navegacao-ul {
   height: 50px;
   display: flex;
@@ -74,67 +95,242 @@ span .material-symbols-outlined {
 .navegacao-conteudo-texto {
   color: #a7b3ba;
   text-decoration: none;
+} */
+/* ---------------------------------------Menu navegação */
+.navegacao ul {
+
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 20px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #143446;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  position: relative;
+  top: -1vh;
+}
+
+.navegacao ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.navegacao ul li a {
+  width: 110px;
+}
+
+.navegacao-conteudo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style-type: none;
+}
+
+.navegacao-conteudo:hover {
+  background-color: #215370;
+}
+
+.navegacao-conteudo-texto {
+  color: #a7b3ba;
+  text-decoration: none;
+}
+
+/* ---------------------------------------Menu navegação */
+
+.main {
+
+  border-radius: 5px;
+
+  margin: 0 3%;
+  display: flex;
+  align-items: center;
+  /* padding: 0 100px 100px 100px; */
+  background-image: url("./imagens/fundo/pergaminho1.jpg");
+  background-position: center;
 }
 
 .section {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px;
-  background-color: #fcf5e7;
+  margin: 30px 50px;
   border: 2px solid transparent;
   border-radius: 15px;
   gap: 20px;
-  background-image: url("./imagens/fundo/pergaminho.jpeg");
+
 }
 
-.section-conteudo {
-  position: relative;
-}
-
-.section-conteudo-imagem-principal {
+#logo-hogwarts {
   width: 100px;
-  height: 100px;
 }
 
-.section-conteudo-texto-principal {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.section-conteudo-texto-secundario {
-  margin-left: 80px;
-  margin-right: 80px;
-  font-size: 17px;
+.section h1 {
+  font-size: 25px;
+  margin: 20px;
   text-align: center;
 }
 
-.section-conteudo-imagem-assinatura {
-  width: 200px;
-  height: 70px;
-  margin-top: 20px;
-  position: relative;
-  left: 70vh;
-  top: 0;
+.section p {
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 50px;
 }
 
-.footer {
+div.assinatura {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 12px;
 }
 
-.footer-imagem {
+footer img {
   width: 80px;
   position: relative;
-  top: -15vh;
+  top: -40px;
 }
 
-.footer-texto {
+footer p {
   margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: lighter;
+  position: relative;
+  top: -15px;
+}
+
+@media screen and (max-width:1024px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .navegacao ul {
+    height: 40px;
+
+    font-size: 11px;
+  }
+
+  .navegacao ul li {
+    width: 90px;
+  }
+
+  .navegacao ul li a {
+    width: auto;
+  }
+
+  div.assinatura img {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  body {
+    min-width: 500px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+
+  .navegacao-conteudo {
+
+    margin: 0;
+  }
+
+  .menu-icon {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #143446;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+  }
+
+  .menu-icon:hover {
+    background-color: #215370;
+  }
+
+
+
+  .center-lines {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2px 0;
+
+  }
+
+  .line-1,
+  .line-2,
+  .line-3 {
+    position: relative;
+
+    width: 30px;
+    height: 2px;
+    background-color: #a7b3ba;
+    border-radius: 3px;
+
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navegacao ul {
+    font-size: 13px;
+    padding: 5px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 20px);
+    gap: 5px;
+    height: auto;
+    border-radius: 5px;
+    top: -20px;
+    bottom: 2vh;
+  }
+
+  .navegacao ul li {
+    width: auto;
+
+  }
+
+  .navegacao ul li a {
+    width: auto;
+    display: block;
+  }
+
+  main {
+    position: relative;
+    top: -15px;
+  }
 }
 
 /* 
@@ -251,4 +447,4 @@ span .material-symbols-outlined {
     margin-bottom: 10px;
     text-align: center;
   }
-} */
+}  */
