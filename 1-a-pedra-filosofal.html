@@ -1,315 +1,390 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Harry Potter, Hogwarts, magia, bruxaria, feitiços,filmes, livros"
+    />
+    <meta
+      name="description"
+      content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Harry Potter, Hogwarts, magia, bruxaria, feitiços,filmes, livros">
-    <meta name="description"
-        content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!">
-
-    <link rel="stylesheet" type="text/css" href="Style-pages.css">
-    <link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="Style-pages.css" />
+    <link rel="stylesheet" type="text/css" href="slider.css" />
     <script src="menu.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond&family=Noto+Serif&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
     <title>Universo HP</title>
-    <link rel="shortcut icon" href="./imagens/favicon.png">
-</head>
+    <link rel="shortcut icon" href="./imagens/favicon.png" />
+  </head>
 
-<body onresize="mudouTamanho()">
-
+  <body onresize="mudouTamanho()">
     <header class="header">
-        <div class="header-imagem">
-            <picture>
-                <source media="(max-width: 768px)" srcset="./imagens/Header/livro1-800.png" type="image/png">
-                <img src="imagens/Header/LIVRO_1.png" alt="" class="header-imagem-conteudo" />
-            </picture>
-        </div>
-
+      <div class="header-imagem">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./imagens/Header/livro1-800.png"
+            type="image/png"
+          />
+          <img
+            src="imagens/Header/LIVRO_1.png"
+            alt=""
+            class="header-imagem-conteudo"
+          />
+        </picture>
+      </div>
     </header>
 
     <div class="menu-icon" onclick="clickMenu()">
-        <div class="center-lines">
-
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
-        </div>
+      <div class="center-lines">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
     </div>
 
-
     <nav id="menu" class="navegacao">
-        <ul>
-            <li class="navegacao-conteudo">
-                <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
+      <ul>
+        <li class="navegacao-conteudo">
+          <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
+        </li>
+        <li class="navegacao-conteudo sub-menu">
+          <a href="./1-a-pedra-filosofal.html" class="navegacao-conteudo-texto"
+            >A Pedra Filosofal</a
+          >
+          <ul class="dropdown">
+            <li>
+              <a href="#section-livro" class="navegacao-conteudo-texto"
+                >Livro</a
+              >
             </li>
-            <li class="navegacao-conteudo sub-menu">
-                <a href="./1-a-pedra-filosofal.html" class="navegacao-conteudo-texto">A Pedra Filosofal</a>
-                <ul class="dropdown">
-                    <li><a href="#section-livro" class="navegacao-conteudo-texto">Livro</a></li>
-                    <li><a href="#section-filme" class="navegacao-conteudo-texto">Filme</a></li>
-                    <li><a href="#section-curiosidades" class="navegacao-conteudo-texto">Curiosidades</a></li>
-                    <li><a href="#galeria" class="navegacao-conteudo-texto">Galeria</a></li>
-                </ul>
+            <li>
+              <a href="#section-filme" class="navegacao-conteudo-texto"
+                >Filme</a
+              >
             </li>
-            <li class="navegacao-conteudo">
-                <a href="./2-a-camara-secreta.html" class="navegacao-conteudo-texto">A Câmara Secreta</a>
+            <li>
+              <a href="#section-curiosidades" class="navegacao-conteudo-texto"
+                >Curiosidades</a
+              >
             </li>
-            <li class="navegacao-conteudo">
-                <a href="./3-o-prisioneiro-de-azkaban.html" class="navegacao-conteudo-texto">O Prisioneiro de
-                    Azkaban</a>
+            <li>
+              <a href="#galeria" class="navegacao-conteudo-texto">Galeria</a>
             </li>
-            <li class="navegacao-conteudo">
-                <a href="./4-o-calice-de-fogo.html" class="navegacao-conteudo-texto">O Cálice de Fogo</a>
-            </li>
-            <li class="navegacao-conteudo">
-                <a href="./5-a-ordem-da-fenix.html" class="navegacao-conteudo-texto">A Ordem da Fenix</a>
-            </li>
-            <li class="navegacao-conteudo">
-                <a href="./6-o-enigma-do-principe.html" class="navegacao-conteudo-texto">O Enigma do Principe</a>
-            </li>
-            <li class="navegacao-conteudo">
-                <a href="./7-as-reliquias-da-morte.html" class="navegacao-conteudo-texto">As Relíquias da Morte</a>
-            </li>
-        </ul>
+          </ul>
+        </li>
+        <li class="navegacao-conteudo">
+          <a href="./2-a-camara-secreta.html" class="navegacao-conteudo-texto"
+            >A Câmara Secreta</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a
+            href="./3-o-prisioneiro-de-azkaban.html"
+            class="navegacao-conteudo-texto"
+            >O Prisioneiro de Azkaban</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a href="./4-o-calice-de-fogo.html" class="navegacao-conteudo-texto"
+            >O Cálice de Fogo</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a href="./5-a-ordem-da-fenix.html" class="navegacao-conteudo-texto"
+            >A Ordem da Fenix</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a
+            href="./6-o-enigma-do-principe.html"
+            class="navegacao-conteudo-texto"
+            >O Enigma do Principe</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a
+            href="./7-as-reliquias-da-morte.html"
+            class="navegacao-conteudo-texto"
+            >As Relíquias da Morte</a
+          >
+        </li>
+      </ul>
     </nav>
 
-
-
     <main class="main">
-        <section id="section-livro" class="section-conteudo">
-            <h4>Livro 1</h4>
-            <H1> HARRY POTTER E A PEDRA FILOSOFAL</H1>
+      <section id="section-livro" class="section-conteudo">
+        <h4>Livro 1</h4>
+        <h1>HARRY POTTER E A PEDRA FILOSOFAL</h1>
 
-            <div class="livro">
-                <div class="livro-capa">
-                    <img src="./imagens/capas/livro1.png" alt="capa do livro Harry Potter e a Pedra Filosofal">
-                </div>
-                <div class="livro-info">
-                    <div class="livro-info-line">
-                        <h4>Autor(a):</h4>
-                        <p>J. K. Rowling</p>
-                    </div>
-                    <br>
-                    <div class="livro-info-line">
-                        <h4>Data de lançamento:</h4>
-                        <p>Reino Unido: 26 de junho de 1997</p>
-                        <p>Estados Unidos: 1 de setembro de 1998</p>
-
-                    </div>
-                    <br>
-                    <div class="livro-info-line">
-                        <h4>Nº de páginas</h4>
-                        <p>Reino Unido: 223</p>
-                        <p>Estados Unidos: 309</p>
-
-                    </div>
-                    <br>
-                    <div class="livro-info-line">
-                        <h3>Versão brasileira</h3>
-                        <Br>
-                        <h4>Tradução</h4>
-                        <p>Isabel Fraga</p>
-                        <h4>Editora</h4>
-                        <p>Rocco</p>
-                        <h4>Lançamento:</h4>
-                        <p>1 de janeiro de 2000</p>
-                        <h4>nº de páginas:</h4>
-                        <p>264</p>
-                    </div>
-                </div>
+        <div class="livro">
+          <div class="livro-capa">
+            <img
+              src="./imagens/capas/livro1.png"
+              alt="capa do livro Harry Potter e a Pedra Filosofal"
+            />
+          </div>
+          <div class="livro-info">
+            <div class="livro-info-line">
+              <h4>Autor(a):</h4>
+              <p>J. K. Rowling</p>
             </div>
-            <h2 class='full'>Resumo</h2>
-            <p>Quando bebê, Harry Potter fora deixado na porta de seus tios maternos Petúnia Dursley (irmã mais velha de
-                Lily) e Vernon Dursley. Harry cresceu na casa dos seus tios,
-                que escondiam a verdade sobre sua família. Ao completar onze anos, Harry começa a receber cartas de um
-                remetente desconhecido, que aumentam de quantidade à medida que seus tios as destroem.
-                Quando finalmente consegue abrir uma delas, Harry descobre que possui poderes mágicos, como os seus
-                pais, e que foi aceito na Escola de Magia e Bruxaria de Hogwarts.
-
-            </p>
-            <br>
-            <p>Em seguida, é revelado que os Potter não morreram num acidente de carro, como sempre dito a Harry,
-                mas
-                assassinados por Lorde Voldemort, um dos maiores bruxos das trevas da história. Na noite do suposto
-                acidente, Voldemort matou James e Lily Potter, porém, ao tentar matar Harry, perdeu sua forma física
-                e
-                deixou uma cicatriz em forma de raio na testa do menino.</p>
-            <br>
-
-            <p>Os Dursley tentam impedir que Harry vá para Hogwarts, até que Rubeus Hagrid, o guardião das chaves e dos
-                terrenos da escola, aparece e o resgata. Eles compram os materiais escolares necessários no Beco
-                Diagonal, onde o garoto descobre que é famoso dentro da comunidade bruxa por ter sobrevivido a uma
-                tentativa de homicídio.
-                Posteriormente, Harry embarca no trem que o leva até Hogwarts. Ao embarcar, ele conhece Ronald Weasley,
-                um menino ruivo filho de bruxos, e Hermione Granger, uma filha de Muggles (pessoas não-bruxas) com
-                grandes talentos acadêmicos. Os três se tornam amigos e, mais tarde, envolvem-se em uma série de
-                episódios relacionados
-                a um objeto escondido nas profundezas do castelo: a Pedra Filosofal, um artefato mágico capaz de
-                transformar metal em ouro puro e produzir o elixir da vida eterna. Alguns fatos levantam a suspeita nos
-                três garotos de que o professor Severus Snape estava tentando roubar a pedra para entregá-la a
-                Voldemort.</p>
-            <br>
-
-            <p>Depois de confirmar que o espírito de Voldemort ronda o castelo e que a pedra se encontra em perigo,
-                Harry, Ron e Hermione alertam os professores, que descartam tal possibilidade pelo fato do objeto estar
-                protegido por várias armadilhas em uma câmara subterrânea. Consequentemente, os três garotos resolvem
-                proteger a pedra sozinhos: atravessam um alçapão guardado por um cérbero e ultrapassam todos os
-                obstáculos
-                que protegem o objeto.</p>
-
-            <br>
-
-            <p>Posteriormente, Harry descobre que o professor Quirinus Quirrell era quem tentava roubar a pedra desde o
-                início para o bruxo das trevas (que permanecia como um parasita na nuca do professor). Harry consegue
-                pegar
-                a pedra e Quirrell tenta matá-lo, porém é derrotado apenas pelo toque do garoto e morre quando Voldemort
-                abandona
-                seu corpo.</p>
-
-
-        </section>
-
-        <section id="section-filme" class="section-conteudo full">
-            <h2 class="full">O Filme</h2>
-            <div class="livro">
-                <div class="livro-capa">
-                    <img src="./imagens/posters/filme1.png" alt="poster do filme Harry Potter e a Pedra Filosofal">
-                </div>
-                <div class="livro-info">
-                    <div class="livro-info-line">
-                        <h4>Direção/Produção/Roteiro</h4>
-                        <p>Chris Columbus</p>
-                        <p>David Heyman</p>
-                        <p>Steven Kloves</p>
-                    </div>
-                    <br>
-                    <div class="livro-info-line">
-                        <h4>Elenco principal:</h4>
-                        <p>Daniel Radcliffe</p>
-                        <p>Emma Watson</p>
-                        <p>Rupert Grint</p>
-
-                    </div>
-                    <br>
-                    <div class="livro-info-line">
-                        <h4>Lançamento:</h4>
-                        <p>Reino Unido/EUA: 16 de novembro de 2001</p>
-                        <p>Brasil: 23 de novembro de 2001</p>
-
-                    </div>
-                    <br>
-                    <div class="livro-info-line">
-                        <h4>Duração:</h4>
-                        <p>195 min</p>
-
-                    </div>
-                    <br>
-                    <div class="livro-info-line">
-                        <h4>Orçamento:</h4>
-                        <p>US$ 125 milhões</p>
-                    </div>
-                    <br>
-                    <div class="livro-info-line">
-                        <h4>Receita:</h4>
-                        <p>US$ 974 milhões</p>
-                    </div>
-
-                </div>
-
+            <br />
+            <div class="livro-info-line">
+              <h4>Data de lançamento:</h4>
+              <p>Reino Unido: 26 de junho de 1997</p>
+              <p>Estados Unidos: 1 de setembro de 1998</p>
             </div>
-
-
-        </section>
-        <section class="section-conteudo full">
-            <h2 class="full">Trailer</h2>
-
-            <iframe width="700" height="465" src="https://www.youtube.com/embed/O7JVilOQdZ4"
-                title="Harry Potter e a Pedra Filosofal (2001) | Trailer [Legendado]" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
-        <section id="section-curiosidades" class="section-conteudo full">
-            <h2 class="full">Curiosidades</h2>
-            <ol class="curiosidades">
-                <li>J.K. Rowling escreveu o livro à mão em vários cafés em Edimburgo, na Escócia. Ela estava
-                    desempregada e vivia de benefícios do governo na época.</li>
-                <br>
-                <li>O manuscrito original do livro foi rejeitado por várias editoras antes de ser finalmente aceito pela
-                    Bloomsbury. A editora pediu que Rowling usasse suas iniciais em vez de seu nome completo, Joanne
-                    Rowling, porque achavam que os meninos não comprariam um livro escrito por uma mulher.</li>
-                <br>
-                <li>O título original do livro era "Harry Potter and the Philosopher's Stone". No entanto, para o
-                    mercado americano, a editora achou que "philosopher's stone" não era um termo que os leitores
-                    americanos entenderiam, então eles mudaram o título para "Harry Potter and the Sorcerer's Stone".
-                </li>
-                <br>
-                <li>Muitos dos nomes de personagens e lugares na série foram inspirados em lugares reais que Rowling
-                    conhecia. Por exemplo, o nome "Hogwarts" veio de um nome de lugar próximo à casa dos avós de
-                    Rowling, e o nome "Diagon Alley" é um jogo de palavras com "diagonally" (diagonalmente em inglês),
-                    porque é uma rua tortuosa.</li>
-            </ol>
-        </section>
-        <section id="galeria" class="section-conteudo full">
-            <h2 class="full">Galeria de imagens</h2>
-            <div id="slider">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-                <input type="radio" name="slider" id="slide4">
-                <div id="slides">
-                    <div id="overflow">
-                        <div class="inner">
-                            <div class="slide slide_1">
-                                <div class="slide-content">
-                                    <img src="imagens/Galeria/HP-1-1.jpg" alt="cenas filme Harry potter 1">
-                                </div>
-                            </div>
-                            <div class="slide slide_2">
-                                <div class="slide-content">
-                                    <img src="imagens/Galeria/HP-1-2.jpg" alt="cenas filme Harry potter 1">
-                                </div>
-                            </div>
-                            <div class="slide slide_3">
-                                <div class="slide-content">
-                                    <img src="imagens/Galeria/HP-1-3.jpg" alt="cenas filme Harry potter 1">
-                                </div>
-                            </div>
-                            <div class="slide slide_4">
-                                <div class="slide-content">
-                                    <img src="imagens/Galeria/HP-1-4.jpg" alt="cenas filme Harry potter 1">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="controls">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                </div>
-                <div id="bullets">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Nº de páginas</h4>
+              <p>Reino Unido: 223</p>
+              <p>Estados Unidos: 309</p>
             </div>
-        </section>
+            <br />
+            <div class="livro-info-line">
+              <h3>Versão brasileira</h3>
+              <br />
+              <h4>Tradução</h4>
+              <p>Isabel Fraga</p>
+              <h4>Editora</h4>
+              <p>Rocco</p>
+              <h4>Lançamento:</h4>
+              <p>9 de novembro de 2000</p>
+              <h4>nº de páginas:</h4>
+              <p>264</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="full">Resumo</h2>
+        <p>
+          Quando bebê, Harry Potter fora deixado na porta de seus tios maternos
+          Petúnia Dursley (irmã mais velha de Lily) e Vernon Dursley. Harry
+          cresceu na casa dos seus tios, que escondiam a verdade sobre sua
+          família. Ao completar onze anos, Harry começa a receber cartas de um
+          remetente desconhecido, que aumentam de quantidade à medida que seus
+          tios as destroem. Quando finalmente consegue abrir uma delas, Harry
+          descobre que possui poderes mágicos, como os seus pais, e que foi
+          aceito na Escola de Magia e Bruxaria de Hogwarts.
+        </p>
+        <br />
+        <p>
+          Em seguida, é revelado que os Potter não morreram num acidente de
+          carro, como sempre dito a Harry, mas assassinados por Lorde Voldemort,
+          um dos maiores bruxos das trevas da história. Na noite do suposto
+          acidente, Voldemort matou James e Lily Potter, porém, ao tentar matar
+          Harry, perdeu sua forma física e deixou uma cicatriz em forma de raio
+          na testa do menino.
+        </p>
+        <br />
 
+        <p>
+          Os Dursley tentam impedir que Harry vá para Hogwarts, até que Rubeus
+          Hagrid, o guardião das chaves e dos terrenos da escola, aparece e o
+          resgata. Eles compram os materiais escolares necessários no Beco
+          Diagonal, onde o garoto descobre que é famoso dentro da comunidade
+          bruxa por ter sobrevivido a uma tentativa de homicídio.
+          Posteriormente, Harry embarca no trem que o leva até Hogwarts. Ao
+          embarcar, ele conhece Ronald Weasley, um menino ruivo filho de bruxos,
+          e Hermione Granger, uma filha de Muggles (pessoas não-bruxas) com
+          grandes talentos acadêmicos. Os três se tornam amigos e, mais tarde,
+          envolvem-se em uma série de episódios relacionados a um objeto
+          escondido nas profundezas do castelo: a Pedra Filosofal, um artefato
+          mágico capaz de transformar metal em ouro puro e produzir o elixir da
+          vida eterna. Alguns fatos levantam a suspeita nos três garotos de que
+          o professor Severus Snape estava tentando roubar a pedra para
+          entregá-la a Voldemort.
+        </p>
+        <br />
+
+        <p>
+          Depois de confirmar que o espírito de Voldemort ronda o castelo e que
+          a pedra se encontra em perigo, Harry, Ron e Hermione alertam os
+          professores, que descartam tal possibilidade pelo fato do objeto estar
+          protegido por várias armadilhas em uma câmara subterrânea.
+          Consequentemente, os três garotos resolvem proteger a pedra sozinhos:
+          atravessam um alçapão guardado por um cérbero e ultrapassam todos os
+          obstáculos que protegem o objeto.
+        </p>
+
+        <br />
+
+        <p>
+          Posteriormente, Harry descobre que o professor Quirinus Quirrell era
+          quem tentava roubar a pedra desde o início para o bruxo das trevas
+          (que permanecia como um parasita na nuca do professor). Harry consegue
+          pegar a pedra e Quirrell tenta matá-lo, porém é derrotado apenas pelo
+          toque do garoto e morre quando Voldemort abandona seu corpo.
+        </p>
+      </section>
+
+      <section id="section-filme" class="section-conteudo full">
+        <h2 class="full">O Filme</h2>
+        <div class="livro">
+          <div class="livro-capa">
+            <img
+              src="./imagens/posters/filme1.png"
+              alt="poster do filme Harry Potter e a Pedra Filosofal"
+            />
+          </div>
+          <div class="livro-info">
+            <div class="livro-info-line">
+              <h4>Direção/Produção/Roteiro</h4>
+              <p>Chris Columbus</p>
+              <p>David Heyman</p>
+              <p>Steven Kloves</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Elenco principal:</h4>
+              <p>Daniel Radcliffe</p>
+              <p>Emma Watson</p>
+              <p>Rupert Grint</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Lançamento:</h4>
+              <p>Reino Unido/EUA: 16 de novembro de 2001</p>
+              <p>Brasil: 23 de novembro de 2001</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Duração:</h4>
+              <p>195 min</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Orçamento:</h4>
+              <p>US$ 125 milhões</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Receita:</h4>
+              <p>US$ 974 milhões</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-conteudo full">
+        <h2 class="full">Trailer</h2>
+
+        <iframe
+          width="700"
+          height="465"
+          src="https://www.youtube.com/embed/O7JVilOQdZ4"
+          title="Harry Potter e a Pedra Filosofal (2001) | Trailer [Legendado]"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="section-curiosidades" class="section-conteudo full">
+        <h2 class="full">Curiosidades</h2>
+        <ol class="curiosidades">
+          <li>
+            J.K. Rowling escreveu o livro à mão em vários cafés em Edimburgo, na
+            Escócia. Ela estava desempregada e vivia de benefícios do governo na
+            época.
+          </li>
+          <br />
+          <li>
+            O manuscrito original do livro foi rejeitado por várias editoras
+            antes de ser finalmente aceito pela Bloomsbury. A editora pediu que
+            Rowling usasse suas iniciais em vez de seu nome completo, Joanne
+            Rowling, porque achavam que os meninos não comprariam um livro
+            escrito por uma mulher.
+          </li>
+          <br />
+          <li>
+            O título original do livro era "Harry Potter and the Philosopher's
+            Stone". No entanto, para o mercado americano, a editora achou que
+            "philosopher's stone" não era um termo que os leitores americanos
+            entenderiam, então eles mudaram o título para "Harry Potter and the
+            Sorcerer's Stone".
+          </li>
+          <br />
+          <li>
+            Muitos dos nomes de personagens e lugares na série foram inspirados
+            em lugares reais que Rowling conhecia. Por exemplo, o nome
+            "Hogwarts" veio de um nome de lugar próximo à casa dos avós de
+            Rowling, e o nome "Diagon Alley" é um jogo de palavras com
+            "diagonally" (diagonalmente em inglês), porque é uma rua tortuosa.
+          </li>
+        </ol>
+      </section>
+      <section id="galeria" class="section-conteudo full">
+        <h2 class="full">Galeria de imagens</h2>
+        <div id="slider">
+          <input type="radio" name="slider" id="slide1" checked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <input type="radio" name="slider" id="slide4" />
+          <div id="slides">
+            <div id="overflow">
+              <div class="inner">
+                <div class="slide slide_1">
+                  <div class="slide-content">
+                    <img
+                      src="imagens/Galeria/HP-1-1.jpg"
+                      alt="cenas filme Harry potter 1"
+                    />
+                  </div>
+                </div>
+                <div class="slide slide_2">
+                  <div class="slide-content">
+                    <img
+                      src="imagens/Galeria/HP-1-2.jpg"
+                      alt="cenas filme Harry potter 1"
+                    />
+                  </div>
+                </div>
+                <div class="slide slide_3">
+                  <div class="slide-content">
+                    <img
+                      src="imagens/Galeria/HP-1-3.jpg"
+                      alt="cenas filme Harry potter 1"
+                    />
+                  </div>
+                </div>
+                <div class="slide slide_4">
+                  <div class="slide-content">
+                    <img
+                      src="imagens/Galeria/HP-1-4.jpg"
+                      alt="cenas filme Harry potter 1"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+          <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <img src="./imagens/footer-selo.png" alt="selo de hogwarts">
-        <p> Copywrite &copy; Harry Potter - 2023</p>
+      <img src="./imagens/footer-selo.png" alt="selo de hogwarts" />
+      <p>Copywrite &copy; Harry Potter - 2023</p>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
