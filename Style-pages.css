@@ -67,7 +67,7 @@ h1 {
   text-align: center;
   /* border: 2px solid transparent; */
   border-radius: 5px;
-  cursor: url(/imagens/Nimbus.cur), default;
+  cursor: url(./imagens/Nimbus.cur), default;
   padding: 5px 7px;
   list-style-type: none;
 }
@@ -83,7 +83,7 @@ h1 {
 .navegacao-conteudo-texto {
   color: #d7dee2;
   text-decoration: none;
-  cursor: url(/imagens/Nimbus.cur), default;
+  cursor: url(./imagens/Nimbus.cur), default;
 }
 
 .sub-menu {
