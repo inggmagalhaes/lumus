@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  cursor: url(./imagens/Harry\ Potter\ Cursor\ Normal\ Wand.cur), default;
+  cursor: url(./imagens/HarryPotterCursorNormalWand.cur), default;
 }
 
 body {
@@ -31,7 +31,7 @@ h1 {
 .header img {
   width: 100%;
   height: auto;
-  cursor: url(./imagens/Varinha\ Harry\ Potter\ Expeliarmus.cur), default;
+  cursor: url(./imagens/VarinhaHarryPotterExpeliarmus.cur), default;
 }
 
 /* 
@@ -135,7 +135,7 @@ span .material-symbols-outlined {
   padding-top: 5px;
   padding-bottom: 5px;
   list-style-type: none;
-  cursor: url(/imagens/Nimbus2000.cur), default;
+  cursor: url(/imagens/Nimbus.cur), default;
 }
 
 .navegacao-conteudo:hover {
@@ -145,7 +145,7 @@ span .material-symbols-outlined {
 .navegacao-conteudo-texto {
   color: #d7dee2;
   text-decoration: none;
-  cursor: url(/imagens/Nimbus2000.cur), default;
+  cursor: url(/imagens/Nimbus.cur), default;
 }
 
 /* ---------------------------------------Menu navegação */
