@@ -1,17 +1,18 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=26747), default;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    background-color: #0a1417;
-    min-width: 400px;
-    max-width: 1300px;
-    text-align: justify;
-    font-family: 'Noto Serif', serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #0a1417;
+  min-width: 400px;
+  max-width: 1300px;
+  text-align: justify;
+  font-family: "Noto Serif", serif;
 }
 
 h1,
@@ -19,436 +20,413 @@ h2,
 h3,
 h4,
 li {
-
-    font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
 }
 
 h1 {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .header img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=63176), default;
 }
 
-
-
 .navegacao ul {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 20px;
 
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0 20px;
-
-    font-size: 14px;
-    text-transform: uppercase;
-    background-color: #143446;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    position: relative;
-    top: -1vh;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #143446;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  position: relative;
+  top: -1vh;
 }
 
 .navegacao ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 111px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 111px;
 }
 
 .navegacao ul li a {
-    width: 100%;
+  width: 100%;
 }
 
 .navegacao-conteudo {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    /* border: 2px solid transparent; */
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px 7px;
-    list-style-type: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* border: 2px solid transparent; */
+  border-radius: 5px;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=26755), default;
+  padding: 5px 7px;
+  list-style-type: none;
 }
 
 .navegacao-conteudo:hover {
-    background-color: #215370;
-
+  background-color: #215370;
 }
 
 .navegacao-conteudo:hover .dropdown {
-    display: block;
-
+  display: block;
 }
 
 .navegacao-conteudo-texto {
-    color: #d7dee2;
-    text-decoration: none;
+  color: #d7dee2;
+  text-decoration: none;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=26755), default;
 }
 
 .sub-menu {
-    position: relative;
+  position: relative;
 }
 
 .navegacao ul.dropdown {
-    display: none;
-    /* display: block; */
-    position: absolute;
-    top: 52px;
-    width: 121px;
-    height: auto;
-    border-top: dashed 1px #143446;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: #215370;
-    /* z-index: 2; */
+  display: none;
+  /* display: block; */
+  position: absolute;
+  top: 52px;
+  width: 121px;
+  height: auto;
+  border-top: dashed 1px #143446;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #215370;
+  /* z-index: 2; */
 }
 
 .dropdown li {
-    padding: 5px 5px;
+  padding: 5px 5px;
 }
 
 .dropdown li:hover {
-    background-color: #143446;
-
+  background-color: #143446;
 }
 
-
-
 .main {
-    background-color: #fcf5e7;
-    background-image: url("https://www.transparenttextures.com/patterns/rice-paper-2.png");
-    border-radius: 5px;
-    width: auto;
-    margin: 0 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 100px 100px 100px;
+  background-color: #fcf5e7;
+  background-image: url("https://www.transparenttextures.com/patterns/rice-paper-2.png");
+  border-radius: 5px;
+  width: auto;
+  margin: 0 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 100px 100px 100px;
 }
 
 div.livro {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
-
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .livro-capa {
-    display: flex;
-    justify-content: flex-end;
-    width: 60%;
-    padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  padding-right: 50px;
 }
 
 .livro-info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    width: 40%;
-    border-radius: 2px;
-    padding-top: 20px;
+  width: 40%;
+  border-radius: 2px;
+  padding-top: 20px;
 
-    padding-left: 50px;
-    align-items: flex-start;
+  padding-left: 50px;
+  align-items: flex-start;
 }
 
 .livro-info-line h3 {
-    background-color: #215370;
-    color: white;
-    font-weight: 200;
-    padding: 0 10px;
-    border-radius: 5px;
+  background-color: #215370;
+  color: white;
+  font-weight: 200;
+  padding: 0 10px;
+  border-radius: 5px;
 }
 
 .livro-info-line h4,
 h3 {
-    font-style: normal;
-    margin: 2px;
-    color: #143446;
+  font-style: normal;
+  margin: 2px;
+  color: #143446;
 }
 
 .livro-info-line p {
-    font-size: 13px;
-    padding-left: 10px;
+  font-size: 13px;
+  padding-left: 10px;
 }
 
 .livro-info-line {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .section-conteudo {
-    margin-top: 20px;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  margin-top: 20px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-conteudo img {
-    height: 450px;
+  height: 450px;
 }
 
 .section-conteudo img,
 h4,
 h2,
 h1 {
-    margin: 10px 0 30px 0;
+  margin: 10px 0 30px 0;
 }
 
 .section-conteudo h1 {
-    text-transform: uppercase;
-    margin-bottom: 50px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .section-conteudo h2 {
-    display: block;
-    border-bottom: solid 1px #215370;
-    margin-bottom: 70px;
+  display: block;
+  border-bottom: solid 1px #215370;
+  margin-bottom: 70px;
 }
 
 .full {
-    width: 100%;
+  width: 100%;
 }
 
-
 .posters {
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .section-conteudo h4 {
-    font-style: italic;
+  font-style: italic;
 }
 
 .section-conteudo iframe {
-    width: 700px;
-    height: 465px;
-
+  width: 700px;
+  height: 465px;
 }
 
 .curiosidades li {
-    font-style: italic;
+  font-style: italic;
 }
 
-
 .conteudo-galeria {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
-    margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  margin-bottom: 100px;
 }
 
 .conteudo-galeria img {
-    width: 300px;
-    margin: 10px;
+  width: 300px;
+  margin: 10px;
 }
 
 footer {
-    color: white;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer img {
-    width: 80px;
-    position: relative;
-    top: -40px;
+  width: 80px;
+  position: relative;
+  top: -40px;
 }
 
 footer p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  top: -15px;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .navegacao ul {
+    height: 40px;
+
+    font-size: 11px;
+  }
+
+  .navegacao ul li {
+    width: 90px;
+  }
+
+  .navegacao ul li a {
+    width: auto;
+  }
+
+  .main {
+    font-size: 13px;
+    padding: 0 60px 90px 60px;
+  }
+
+  .livro-capa {
+    padding-right: 80px;
+  }
+
+  .livro-info {
+    padding-left: 0;
+  }
+
+  .section-conteudo img {
+    height: 400px;
+  }
+
+  .section-conteudo iframe {
+    width: 500px;
+    height: 332px;
+  }
+
+  #galeria {
+    width: 100%;
+  }
+
+  .conteudo-galeria {
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 10px;
+  }
+
+  .conteudo-galeria img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 500px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .navegacao-conteudo {
+    margin: 0;
+  }
+
+  .menu-icon {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #143446;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 5px;
     position: relative;
-    top: -15px;
-}
+    top: -20px;
+    cursor: pointer;
+  }
 
-@media screen and (max-width:1024px) {
-    h1 {
-        font-size: 28px;
-    }
+  .menu-icon:hover {
+    background-color: #215370;
+  }
 
-    .navegacao ul {
-        height: 40px;
+  .center-lines {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2px 0;
+  }
 
-        font-size: 11px;
-    }
+  .line-1,
+  .line-2,
+  .line-3 {
+    position: relative;
 
-    .navegacao ul li {
-        width: 90px;
-    }
+    width: 30px;
+    height: 2px;
+    background-color: #a7b3ba;
+    border-radius: 3px;
+  }
 
-    .navegacao ul li a {
-        width: auto;
-    }
+  #menu {
+    display: none;
+  }
 
-    .main {
-        font-size: 13px;
-        padding: 0 60px 90px 60px;
-    }
+  .navegacao ul {
+    font-size: 13px;
+    padding: 5px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 20px);
+    gap: 5px;
+    height: auto;
+    border-radius: 5px;
+    top: -20px;
+    bottom: 2vh;
+  }
 
-    .livro-capa {
-        padding-right: 80px;
-    }
+  .navegacao ul li {
+    width: auto;
+  }
 
-    .livro-info {
-        padding-left: 0;
-    }
+  .navegacao ul li a {
+    width: auto;
+    display: block;
+  }
 
-    .section-conteudo img {
-        height: 400px;
-    }
+  .main {
+    padding: 0 30px 100px 30px;
+    position: relative;
+    top: -10px;
+  }
 
-    .section-conteudo iframe {
-        width: 500px;
-        height: 332px;
-    }
+  div.livro {
+    display: flex;
+    justify-content: center;
+  }
 
-    #galeria {
-        width: 100%;
-    }
+  .livro-capa {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
 
-    .conteudo-galeria {
-        width: 100%;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 33% 33% 33%;
-        gap: 10px;
-    }
+  .livro-info {
+    display: none;
+  }
 
-    .conteudo-galeria img {
+  .section-conteudo img {
+    height: 300px;
+  }
 
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width:768px) {
-
-    body {
-        min-width: 500px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-
-
-    .navegacao-conteudo {
-
-        margin: 0;
-    }
-
-    .menu-icon {
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 0 20px;
-        font-size: 14px;
-        text-transform: uppercase;
-        background-color: #143446;
-        border: 2px solid transparent;
-        border-radius: 5px;
-        margin-bottom: 5px;
-        position: relative;
-        top: -20px;
-        cursor: pointer;
-    }
-
-    .menu-icon:hover {
-        background-color: #215370;
-    }
-
-
-
-    .center-lines {
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 2px 0;
-
-    }
-
-    .line-1,
-    .line-2,
-    .line-3 {
-        position: relative;
-
-        width: 30px;
-        height: 2px;
-        background-color: #a7b3ba;
-        border-radius: 3px;
-
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .navegacao ul {
-        font-size: 13px;
-        padding: 5px;
-        height: auto;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(4, 20px);
-        gap: 5px;
-        height: auto;
-        border-radius: 5px;
-        top: -20px;
-        bottom: 2vh;
-    }
-
-    .navegacao ul li {
-        width: auto;
-
-    }
-
-    .navegacao ul li a {
-        width: auto;
-        display: block;
-    }
-
-    .main {
-        padding: 0 30px 100px 30px;
-        position: relative;
-        top: -10px;
-    }
-
-    div.livro {
-        display: flex;
-        justify-content: center;
-    }
-
-    .livro-capa {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .livro-info {
-        display: none;
-    }
-
-    .section-conteudo img {
-        height: 300px;
-    }
-
-    .section-conteudo iframe {
-        width: 400px;
-        height: 265px;
-    }
+  .section-conteudo iframe {
+    width: 400px;
+    height: 265px;
+  }
 }
