@@ -1,304 +1,482 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Harry Potter, Hogwarts, magia, bruxaria, feitiços,filmes, livros"
+    />
+    <meta
+      name="description"
+      content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Harry Potter, Hogwarts, magia, bruxaria, feitiços,filmes, livros">
-    <meta name="description"
-        content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!">
-
-    <link rel="stylesheet" type="text/css" href="Style-pages.css">
-    <link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="Style-pages.css" />
+    <link rel="stylesheet" type="text/css" href="slider.css" />
     <script src="menu.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond&family=Noto+Serif&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Universo HP</title>
-    <link rel="shortcut icon" href="./imagens/favicon.png">
-</head>
+    <link rel="shortcut icon" href="./imagens/favicon.png" />
+  </head>
 
-<body onresize="mudouTamanho()">
-
+  <body onresize="mudouTamanho()">
     <header class="header">
-        <div class="header-imagem">
-            <picture>
-                <source media="(max-width: 768px)" srcset="./imagens/Header/livro4-800.png" type="image/png">
-                <img src="imagens/Header/LIVRO_4.png" alt="" class="header-imagem-conteudo" />
-            </picture>
-        </div>
+      <div class="header-imagem">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./imagens/Header/livro4-800.png"
+            type="image/png"
+          />
+          <img
+            src="imagens/Header/LIVRO_4.png"
+            alt=""
+            class="header-imagem-conteudo"
+          />
+        </picture>
+      </div>
     </header>
     <div class="menu-icon" onclick="clickMenu()">
-        <div class="center-lines">
-
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
-        </div>
+      <div class="center-lines">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
     </div>
     <nav id="menu" class="navegacao">
-        <ul>
-            <li class="navegacao-conteudo">
-                <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
+      <ul>
+        <li class="navegacao-conteudo">
+          <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
+        </li>
+        <li class="navegacao-conteudo">
+          <a href="./1-a-pedra-filosofal.html" class="navegacao-conteudo-texto"
+            >A Pedra Filosofal</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a href="./2-a-camara-secreta.html" class="navegacao-conteudo-texto"
+            >A Câmara Secreta</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a
+            href="./3-o-prisioneiro-de-azkaban.html"
+            class="navegacao-conteudo-texto"
+            >O Prisioneiro de Azkaban</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a href="./4-o-calice-de-fogo.html" class="navegacao-conteudo-texto"
+            >O Cálice de Fogo</a
+          >
+          <ul class="dropdown">
+            <li>
+              <a href="#section-livro" class="navegacao-conteudo-texto"
+                >Livro</a
+              >
             </li>
-            <li class="navegacao-conteudo">
-                <a href="./1-a-pedra-filosofal.html" class="navegacao-conteudo-texto">A Pedra Filosofal</a>
+            <li>
+              <a href="#section-filme" class="navegacao-conteudo-texto"
+                >Filme</a
+              >
             </li>
-            <li class="navegacao-conteudo">
-                <a href="./2-a-camara-secreta.html" class="navegacao-conteudo-texto">A Câmara Secreta</a>
+            <li>
+              <a href="#section-curiosidades" class="navegacao-conteudo-texto"
+                >Curiosidades</a
+              >
             </li>
-            <li class="navegacao-conteudo">
-                <a href="./3-o-prisioneiro-de-azkaban.html" class="navegacao-conteudo-texto">O Prisioneiro de
-                    Azkaban</a>
+            <li>
+              <a href="#galeria" class="navegacao-conteudo-texto">Galeria</a>
             </li>
-            <li class="navegacao-conteudo">
-                <a href="./4-o-calice-de-fogo.html" class="navegacao-conteudo-texto">O Cálice de Fogo</a>
-            </li>
-            <li class="navegacao-conteudo">
-                <a href="./5-a-ordem-da-fenix.html" class="navegacao-conteudo-texto">A Ordem da Fenix</a>
-            </li>
-            <li class="navegacao-conteudo">
-                <a href="./6-o-enigma-do-principe.html" class="navegacao-conteudo-texto">O Enigma do Principe</a>
-            </li>
-            <li class="navegacao-conteudo">
-                <a href="./7-as-reliquias-da-morte.html" class="navegacao-conteudo-texto">As Relíquias da Morte</a>
-            </li>
-        </ul>
+          </ul>
+        </li>
+        <li class="navegacao-conteudo">
+          <a href="./5-a-ordem-da-fenix.html" class="navegacao-conteudo-texto"
+            >A Ordem da Fenix</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a
+            href="./6-o-enigma-do-principe.html"
+            class="navegacao-conteudo-texto"
+            >O Enigma do Principe</a
+          >
+        </li>
+        <li class="navegacao-conteudo">
+          <a
+            href="./7-as-reliquias-da-morte.html"
+            class="navegacao-conteudo-texto"
+            >As Relíquias da Morte</a
+          >
+        </li>
+      </ul>
     </nav>
 
-
-
     <main class="main">
-        <section class="section-conteudo">
-            <h4>Livro 4</h4>
-            <H1> Harry Potter e o Cálice de Fogo</H1>
-            <img src="./imagens/capas/livro4.png" alt="capa do livro Harry Potter e O CALICE DE FOGO">
-            <h2>Resumo</h2>
-            <p>De volta aos Dursley, Harry Potter, em um sonho, assiste Lorde Voldemort matar Frank Bryce, e acorda com
-                sua cicatriz doendo. Os Weasleys então resgatam Harry e Hermione Granger de suas casas e os levam para a
-                Copa do Mundo de Quadribol usando uma Chave de Portal para assistir a partida de Irlanda contra
-                Bulgária. Lá, Harry conhece Cedrico Diggory, que está no jogo com seu pai. Depois da partida, os
-                seguidores de Voldemort — nomeados Comensais da Morte — atacam o local, causando estragos e mortes. Eles
-                conjuram a Marca Negra no céu, o que gera pânico em todos, pois é a primeira vez que é vista em treze
-                anos. Após Harry perder sua varinha durante o caos do ataque, Winky, a elfa doméstica de Bartolomeu
-                Crouch, é falsamente acusada de ter lançado a marca após ser vista segurando o objeto, que é revelado
-                ter sido usado para lançá-la. Hermione, inconformada com a injustiça, forma um fundo de apoio com o
-                intuito de promover os direitos dos elfos domésticos.
-            </p>
-            <br>
-            <p>Em Hogwarts, o professor Dumbledore anuncia que Alastor "Olho-Tonto" Moody será o novo professor de
-                Defesa Contra as Artes das Trevas do ano, e que Hogwarts irá realizar o Torneio Tribruxo, dando um
-                prêmio de mil galeões ao vencedor.De volta aos Dursley, Harry Potter, em um sonho, assiste Lorde
-                Voldemort matar Frank Bryce, e acorda com sua cicatriz doendo. Os Weasleys então resgatam Harry e
-                Hermione Granger de suas casas e os levam para a Copa do Mundo de Quadribol usando uma Chave de Portal
-                para assistir a partida de Irlanda contra Bulgária. Lá, Harry conhece Cedrico Diggory, que está no jogo
-                com seu pai. Depois da partida, os seguidores de Voldemort — nomeados Comensais da Morte — atacam o
-                local, causando estragos e mortes. Eles conjuram a Marca Negra no céu, o que gera pânico em todos, pois
-                é a primeira vez que é vista em treze anos. Após Harry perder sua varinha durante o caos do ataque,
-                Winky, a elfa doméstica de Bartolomeu Crouch, é falsamente acusada de ter lançado a marca após ser vista
-                segurando o objeto, que é revelado ter sido usado para lançá-la. Hermione, inconformada com a injustiça,
-                forma um fundo de apoio com o intuito de promover os direitos dos elfos domésticos.</p>
-            <br>
-            <p>Em Hogwarts, o professor Dumbledore anuncia que Alastor "Olho-Tonto" Moody será o novo professor de
-                Defesa Contra as Artes das Trevas do ano, e que Hogwarts irá realizar o Torneio Tribruxo, dando um
-                prêmio de mil galeões ao vencedor.Porém, apenas aqueles maiores de dezessete anos são permitidos a
-                participar.
-                É a primeira vez em um espaço de 202 anos que o Torneio será realizado. Estudantes da Academia de Magia
-                Beauxbatons
-                e do Instituto Durmstrang, outras escolas de magia, viajam para Hogwarts, onde ficarão por um ano, com o
-                objetivo
-                de competir no torneio. No Dia das Bruxas, o Cálice de Fogo sorteia três nomes (um de cada escola):
-                Fleur Delacour
-                da Acadêmia Beauxbatons; Viktor Krum (também apanhador do time de quadribol da Bulgária) do Instituto
-                Durmstrang;
-                e Cedrico Diggory de Hogwarts, para competirem no campeonato. Porém, o cálice sorteia um nome a mais,
-                Harry Potter,
-                levando a suspeita e indignação de todos. Rony inveja Harry e se recusa a falar com ele.
-            </p>
-            <br>
-            <p>Hagrid conta a Harry que a primeira tarefado torneio envolve dragões, e como os diretores de Fleur e Krum
-                também já sabiam e iriam
-                certamente contá-los, Harry informa Cedrico. Na tarefa, Harry tem que passar por um dragão Rabo-Córneo
-                Húngaro para pegar um ovo de ouro.
-                O garoto realizou a prova com a ajuda de sua vassoura e ficou empatado na primeira colocação com Krum.
-                Mais tarde, Rony se reconcilia com
-                Harry por entender o grande perigo do torneio. Quando Harry abre o ovo, ele começa a soltar um
-                insuportável grito agourento. Hermione leva
-                Harry e Rony as cozinhas da escola, onde os elfos domésticos trabalham. Lá, eles retornam a ver Winky,
-                que está muito perturbada e lutando
-                para superar a perda de seu saque. Eles também conhecem o velho amigo de Harry, Dobby, que foi
-                contratado pela escola para trabalhar na cozinha;
-                ele é o único elfo que prefere a liberdade ao invés de trabalhar duro.
-                Enquanto isso, a repórter "fofoqueira" Rita Skeeter escreve artigos mentirosos e escandalosos sobre as
-                pessoas de Hogwarts, incluindo Hermione,
-                Harry, Hagrid e Madame Maxime (diretora de Beauxbatons), e os publica no Profeta Diário.
-            </p>
-            <br>
-            <p>Com o baile de inverno se aproximando, Harry tenta encontrar um par de dança, e quando finalmente convida
-                Cho Chang,
-                Cedrico já havia feito primeiro, então Harry e Rony convidam as gêmeas Parvati e Padma Patil. Rony fica
-                com ciúmes de
-                Hermione após vê-la com Krum. No baile, Cedrico dá uma dica a Harry sobre o ovo, dizendo para levá-lo ao
-                banheiro dos
-                monitores.
-                Ele leva o ovo ao banheiro, onde a Murta-Que-Geme o diz para ouvir o objeto debaixo da água;] lá, as
-                palavras se tornam compreensíveis.
-                Harry então descobre que a próxima tarefa é alguma coisa relacionada a resgatar algo que ele irá "perder
-                dolorosamente". Quando Harry
-                descobre que a segunda tarefa no Lago Negro, ele começa a procurar por feitiços que o farão respirar
-                debaixo da água. Na manhã do dia da
-                tarefa, Harry ainda não havia encontrado nenhuma solução, porém Dobby o entrega uma planta chamada
-                guelricho, que faz com que o garoto
-                crie brânquias. Potter completa a tarefa resgatando Rony do fundo do lago. Quando percebe que ninguém
-                regataria Gabrielle, irmã de Fleur
-                (que havia sido desclassificada), ele se arrisca e também a salva. Depois da apuração dos juízes, mesmo
-                ficando na última colocação,
-                ele ganha pontos suficientes para empatar com Cedrico.
-            </p>
-            <br>
-            <p>Um mês antes da tarefa final, Harry e Krum conversavam quando encontraram Crouch, que parecia estar
-                louco, e diz a Harry para chamar
-                Dumbledore imediatamente. Deixando Krum com Crouch, Harry procura o diretor, porém quando retorna,
-                encontra Viktor atordoado e Crouch morto.
-                Potter volta a se preparar para a última tarefa: um labirinto. Dentro do labirinto, Harry é obrigado a
-                nocautear Krum, que havia sido enfeitiçado,
-                para salvar Cedrico. Trabalhando juntos, os dois alcançam a taça. Eles concordam em tocá-la ao mesmo
-                tempo, e quando tocam, descobrem que é uma
-                Chave de Portal que os leva a um cemitério. No local, Pedro Pettigrew mata Cedrico e usa o sangue de
-                Harry, sua própria mão e um osso do
-                pai de Tom Riddle para ressuscitar Lorde Voldemort.</p>
-            <br>
-            <p>Voldemort convoca seus Comensais da Morte, repreendendo-os por pensarem que estava morto e abandoná-lo.
-                Ele revela que tem um único "servo fiel"
-                escondido em Hogwarts, que estava trabalhando em assegurar que Harry chegasse ao cemitério. Voldemort e
-                Harry tem um duelo de varinhas.
-                Porém, quando os dois lançam feitiços um contra o outro, suas varinhas se conectam devido a seus núcleos
-                serem idênticos. Durante o duelo,
-                algumas vítimas de Voldemort, incluindo os pais de Harry e Cedrico, emergem de sua varinha e distraem o
-                bruxo para que Harry consiga fugir
-                de volta à Hogwarts usando novamente a Chave de Portal; ele leva o corpo de Cedrico consigo.
-            </p>
-            <br>
-            <p>Quando ele retorna, Moody o leva para sua sala e revela ser o "servo fiel" de Voldemort. Ele declara ser
-                a pessoa que colocou o
-                nome de Harry no Cálice de Fogo. Antes de Moody conseguir matar Harry, entram na sala Dumbledore,
-                McGonagall e Snape.
-                Eles então descobrem que Moody é, na verdade, Bartô Crouch Jr., filho de Crouch, disfarçado através de
-                Poção Polissuco.
-                Anos antes, Crouch havia sentenciado seu filho a prisão perpétua na prisão de Azkaban por ter ligações
-                com os Comensais da Morte,
-                porém conseguiu escapar após ter trocado de lugar com sua falecida mãe. Crouch Jr. foi quem conjurou a
-                Marca Negra na
-                Copa do Mundo de Quadribol para assustar os Comensais que ele acreditava ter abandonado Voldemort.
-                Eventualmente,
-                o Lorde das Trevas entrou em contato com seu fiel e o personificou de Moody como parte de seu plano.
-                Crouch Jr.
-                também admitiu ter matado seu pai para impedi-lo de contar a Dumbledore sobre Voldemort.
-                O verdadeiro Moody é encontrado dentro de um baú encantado. Harry é declarado como o ganhador do Torneio
-                Tribruxo e recebe o prêmio.
-            </p>
-            <br>
-            <p>Muitas pessoas, incluindo o Ministro da Magia Cornélio Fudge, não acreditam em Harry e Dumbledore sobre o
-                retorno de Voldemort,
-                e como Crouch Jr. já havia recebido o Beijo do Dementador, não foi possível usá-lo como testemunha.
-                Hermione descobre que Rita Skeeter
-                é ilegalmente uma animago, podendo se transformar em um besouro. Através de chantagens, a garota obriga
-                Skeeter a parar de escrever
-                suas histórias difamatórias. Por não querer seu prêmio do torneio, Harry dá a Fred e George todo o
-                dinheiro ganho para que comecem
-                sua loja de truques, e volta para casa de seus tios. </p>
+      <section id="section-livro" class="section-conteudo">
+        <h4>Livro 1</h4>
+        <h1>HARRY POTTER E O CÁLICE DE FOGO</h1>
 
-        </section>
-
-        <section class="section-conteudo">
-            <h2>O Filme</h2>
-            <img src="./imagens/posters/filme4.png" alt="poster do filme Harry Potter e o calice de fogo">
-        </section>
-        <section class="section-conteudo">
-            <h2>Trailer</h2>
-            <iframe width="700" height="465" src="https://www.youtube.com/embed/rnX4KxsaoRQ"
-                title="Trailer de &#39;Harry Potter e o Cálice de Fogo&#39;  legendado" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
-        <section class="section-conteudo">
-            <h2>Curiosidades</h2>
-            <ol>
-                <li>O torneio Tribruxo, que é uma parte importante da trama deste livro, foi inspirado em uma tradição
-                    escocesa chamada Highland Games, onde os competidores participam de uma série de eventos físicos e
-                    mentais. Rowling disse que também se inspirou nos Jogos Olímpicos para criar o torneio.</li>
-                <br>
-                <li>O nome "Cedrico Diggory", um personagem que é introduzido neste livro, foi inspirado em um aluno que
-                    J.K. Rowling conheceu quando era professora em Portugal. Ela disse que o nome "soava como um herói"
-                    e decidiu usá-lo na história.</li>
-                <br>
-                <li>Este livro contém a morte mais chocante da série: a morte de Cedrico Diggory. Rowling disse que
-                    queria mostrar aos leitores que a série não era apenas uma fantasia alegre, mas também poderia ser
-                    sombria e realista. A morte de Cedrico também é um ponto crucial na trama da série, pois é o evento
-                    que finalmente traz Voldemort de volta à plena força.
-                </li>
-
-            </ol>
-        </section>
-        <section id="galeria" class="section-conteudo">
-            <h2>Galeria de imagens</h2>
-            <div id="slider">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-                <input type="radio" name="slider" id="slide4">
-                <div id="slides">
-                    <div id="overflow">
-                        <div class="inner">
-                            <div class="slide slide_1">
-                                <div class="slide-content">
-                                    <img src="imagens/Galeria/HP-4-1.png" alt="cenas filme Harry potter 4">
-                                </div>
-                            </div>
-                            <div class="slide slide_2">
-                                <div class="slide-content">
-                                    <img src="imagens/Galeria/HP-4-2.png" alt="cenas filme Harry potter 4">
-                                </div>
-                            </div>
-                            <div class="slide slide_3">
-                                <div class="slide-content">
-                                    <img src="imagens/Galeria/HP-4-3.png" alt="cenas filme Harry potter 4">
-                                </div>
-                            </div>
-                            <div class="slide slide_4">
-                                <div class="slide-content">
-                                    <img src="imagens/Galeria/HP-4-4.png" alt="cenas filme Harry potter 4">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="controls">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                </div>
-                <div id="bullets">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                </div>
+        <div class="livro">
+          <div class="livro-capa">
+            <img
+              src="./imagens/capas/livro4.png"
+              alt="capa do livro Harry Potter e o Cálice de Fogo"
+            />
+          </div>
+          <div class="livro-info">
+            <div class="livro-info-line">
+              <h4>Autor(a):</h4>
+              <p>J. K. Rowling</p>
             </div>
-        </section>
+            <br />
+            <div class="livro-info-line">
+              <h4>Data de lançamento:</h4>
+              <p>Reino Unido: 8 de julho de 2000</p>
+              <p>Estados Unidos: 8 de julho de 2000</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Nº de páginas</h4>
+              <p>Reino Unido: 640</p>
+              <p>Estados Unidos: 752</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h3>Versão brasileira</h3>
+              <br />
+              <h4>Tradução</h4>
+              <p>Lia Wyler</p>
+              <h4>Editora</h4>
+              <p>Rocco</p>
+              <h4>Lançamento:</h4>
+              <p>1 de junho de 2001</p>
+              <h4>nº de páginas:</h4>
+              <p>640</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="full">Resumo</h2>
+        <p>
+          De volta aos Dursley, Harry Potter, em um sonho, assiste Lorde
+          Voldemort matar Frank Bryce, e acorda com sua cicatriz doendo. Os
+          Weasleys então resgatam Harry e Hermione Granger de suas casas e os
+          levam para a Copa do Mundo de Quadribol usando uma Chave de Portal
+          para assistir a partida de Irlanda contra Bulgária. Lá, Harry conhece
+          Cedrico Diggory, que está no jogo com seu pai. Depois da partida, os
+          seguidores de Voldemort — nomeados Comensais da Morte — atacam o
+          local, causando estragos e mortes. Eles conjuram a Marca Negra no céu,
+          o que gera pânico em todos, pois é a primeira vez que é vista em treze
+          anos. Após Harry perder sua varinha durante o caos do ataque, Winky, a
+          elfa doméstica de Bartolomeu Crouch, é falsamente acusada de ter
+          lançado a marca após ser vista segurando o objeto, que é revelado ter
+          sido usado para lançá-la. Hermione, inconformada com a injustiça,
+          forma um fundo de apoio com o intuito de promover os direitos dos
+          elfos domésticos.
+        </p>
+        <br />
+        <p>
+          Em Hogwarts, o professor Dumbledore anuncia que Alastor "Olho-Tonto"
+          Moody será o novo professor de Defesa Contra as Artes das Trevas do
+          ano, e que Hogwarts irá realizar o Torneio Tribruxo, dando um prêmio
+          de mil galeões ao vencedor.De volta aos Dursley, Harry Potter, em um
+          sonho, assiste Lorde Voldemort matar Frank Bryce, e acorda com sua
+          cicatriz doendo. Os Weasleys então resgatam Harry e Hermione Granger
+          de suas casas e os levam para a Copa do Mundo de Quadribol usando uma
+          Chave de Portal para assistir a partida de Irlanda contra Bulgária.
+          Lá, Harry conhece Cedrico Diggory, que está no jogo com seu pai.
+          Depois da partida, os seguidores de Voldemort — nomeados Comensais da
+          Morte — atacam o local, causando estragos e mortes. Eles conjuram a
+          Marca Negra no céu, o que gera pânico em todos, pois é a primeira vez
+          que é vista em treze anos. Após Harry perder sua varinha durante o
+          caos do ataque, Winky, a elfa doméstica de Bartolomeu Crouch, é
+          falsamente acusada de ter lançado a marca após ser vista segurando o
+          objeto, que é revelado ter sido usado para lançá-la. Hermione,
+          inconformada com a injustiça, forma um fundo de apoio com o intuito de
+          promover os direitos dos elfos domésticos.
+        </p>
+        <br />
+        <p>
+          Em Hogwarts, o professor Dumbledore anuncia que Alastor "Olho-Tonto"
+          Moody será o novo professor de Defesa Contra as Artes das Trevas do
+          ano, e que Hogwarts irá realizar o Torneio Tribruxo, dando um prêmio
+          de mil galeões ao vencedor.Porém, apenas aqueles maiores de dezessete
+          anos são permitidos a participar. É a primeira vez em um espaço de 202
+          anos que o Torneio será realizado. Estudantes da Academia de Magia
+          Beauxbatons e do Instituto Durmstrang, outras escolas de magia, viajam
+          para Hogwarts, onde ficarão por um ano, com o objetivo de competir no
+          torneio. No Dia das Bruxas, o Cálice de Fogo sorteia três nomes (um de
+          cada escola): Fleur Delacour da Acadêmia Beauxbatons; Viktor Krum
+          (também apanhador do time de quadribol da Bulgária) do Instituto
+          Durmstrang; e Cedrico Diggory de Hogwarts, para competirem no
+          campeonato. Porém, o cálice sorteia um nome a mais, Harry Potter,
+          levando a suspeita e indignação de todos. Rony inveja Harry e se
+          recusa a falar com ele.
+        </p>
+        <br />
+        <p>
+          Hagrid conta a Harry que a primeira tarefado torneio envolve dragões,
+          e como os diretores de Fleur e Krum também já sabiam e iriam
+          certamente contá-los, Harry informa Cedrico. Na tarefa, Harry tem que
+          passar por um dragão Rabo-Córneo Húngaro para pegar um ovo de ouro. O
+          garoto realizou a prova com a ajuda de sua vassoura e ficou empatado
+          na primeira colocação com Krum. Mais tarde, Rony se reconcilia com
+          Harry por entender o grande perigo do torneio. Quando Harry abre o
+          ovo, ele começa a soltar um insuportável grito agourento. Hermione
+          leva Harry e Rony as cozinhas da escola, onde os elfos domésticos
+          trabalham. Lá, eles retornam a ver Winky, que está muito perturbada e
+          lutando para superar a perda de seu saque. Eles também conhecem o
+          velho amigo de Harry, Dobby, que foi contratado pela escola para
+          trabalhar na cozinha; ele é o único elfo que prefere a liberdade ao
+          invés de trabalhar duro. Enquanto isso, a repórter "fofoqueira" Rita
+          Skeeter escreve artigos mentirosos e escandalosos sobre as pessoas de
+          Hogwarts, incluindo Hermione, Harry, Hagrid e Madame Maxime (diretora
+          de Beauxbatons), e os publica no Profeta Diário.
+        </p>
+        <br />
+        <p>
+          Com o baile de inverno se aproximando, Harry tenta encontrar um par de
+          dança, e quando finalmente convida Cho Chang, Cedrico já havia feito
+          primeiro, então Harry e Rony convidam as gêmeas Parvati e Padma Patil.
+          Rony fica com ciúmes de Hermione após vê-la com Krum. No baile,
+          Cedrico dá uma dica a Harry sobre o ovo, dizendo para levá-lo ao
+          banheiro dos monitores. Ele leva o ovo ao banheiro, onde a
+          Murta-Que-Geme o diz para ouvir o objeto debaixo da água;] lá, as
+          palavras se tornam compreensíveis. Harry então descobre que a próxima
+          tarefa é alguma coisa relacionada a resgatar algo que ele irá "perder
+          dolorosamente". Quando Harry descobre que a segunda tarefa no Lago
+          Negro, ele começa a procurar por feitiços que o farão respirar debaixo
+          da água. Na manhã do dia da tarefa, Harry ainda não havia encontrado
+          nenhuma solução, porém Dobby o entrega uma planta chamada guelricho,
+          que faz com que o garoto crie brânquias. Potter completa a tarefa
+          resgatando Rony do fundo do lago. Quando percebe que ninguém regataria
+          Gabrielle, irmã de Fleur (que havia sido desclassificada), ele se
+          arrisca e também a salva. Depois da apuração dos juízes, mesmo ficando
+          na última colocação, ele ganha pontos suficientes para empatar com
+          Cedrico.
+        </p>
+        <br />
+        <p>
+          Um mês antes da tarefa final, Harry e Krum conversavam quando
+          encontraram Crouch, que parecia estar louco, e diz a Harry para chamar
+          Dumbledore imediatamente. Deixando Krum com Crouch, Harry procura o
+          diretor, porém quando retorna, encontra Viktor atordoado e Crouch
+          morto. Potter volta a se preparar para a última tarefa: um labirinto.
+          Dentro do labirinto, Harry é obrigado a nocautear Krum, que havia sido
+          enfeitiçado, para salvar Cedrico. Trabalhando juntos, os dois alcançam
+          a taça. Eles concordam em tocá-la ao mesmo tempo, e quando tocam,
+          descobrem que é uma Chave de Portal que os leva a um cemitério. No
+          local, Pedro Pettigrew mata Cedrico e usa o sangue de Harry, sua
+          própria mão e um osso do pai de Tom Riddle para ressuscitar Lorde
+          Voldemort.
+        </p>
+        <br />
+        <p>
+          Voldemort convoca seus Comensais da Morte, repreendendo-os por
+          pensarem que estava morto e abandoná-lo. Ele revela que tem um único
+          "servo fiel" escondido em Hogwarts, que estava trabalhando em
+          assegurar que Harry chegasse ao cemitério. Voldemort e Harry tem um
+          duelo de varinhas. Porém, quando os dois lançam feitiços um contra o
+          outro, suas varinhas se conectam devido a seus núcleos serem
+          idênticos. Durante o duelo, algumas vítimas de Voldemort, incluindo os
+          pais de Harry e Cedrico, emergem de sua varinha e distraem o bruxo
+          para que Harry consiga fugir de volta à Hogwarts usando novamente a
+          Chave de Portal; ele leva o corpo de Cedrico consigo.
+        </p>
+        <br />
+        <p>
+          Quando ele retorna, Moody o leva para sua sala e revela ser o "servo
+          fiel" de Voldemort. Ele declara ser a pessoa que colocou o nome de
+          Harry no Cálice de Fogo. Antes de Moody conseguir matar Harry, entram
+          na sala Dumbledore, McGonagall e Snape. Eles então descobrem que Moody
+          é, na verdade, Bartô Crouch Jr., filho de Crouch, disfarçado através
+          de Poção Polissuco. Anos antes, Crouch havia sentenciado seu filho a
+          prisão perpétua na prisão de Azkaban por ter ligações com os Comensais
+          da Morte, porém conseguiu escapar após ter trocado de lugar com sua
+          falecida mãe. Crouch Jr. foi quem conjurou a Marca Negra na Copa do
+          Mundo de Quadribol para assustar os Comensais que ele acreditava ter
+          abandonado Voldemort. Eventualmente, o Lorde das Trevas entrou em
+          contato com seu fiel e o personificou de Moody como parte de seu
+          plano. Crouch Jr. também admitiu ter matado seu pai para impedi-lo de
+          contar a Dumbledore sobre Voldemort. O verdadeiro Moody é encontrado
+          dentro de um baú encantado. Harry é declarado como o ganhador do
+          Torneio Tribruxo e recebe o prêmio.
+        </p>
+        <br />
+        <p>
+          Muitas pessoas, incluindo o Ministro da Magia Cornélio Fudge, não
+          acreditam em Harry e Dumbledore sobre o retorno de Voldemort, e como
+          Crouch Jr. já havia recebido o Beijo do Dementador, não foi possível
+          usá-lo como testemunha. Hermione descobre que Rita Skeeter é
+          ilegalmente uma animago, podendo se transformar em um besouro. Através
+          de chantagens, a garota obriga Skeeter a parar de escrever suas
+          histórias difamatórias. Por não querer seu prêmio do torneio, Harry dá
+          a Fred e George todo o dinheiro ganho para que comecem sua loja de
+          truques, e volta para casa de seus tios.
+        </p>
+      </section>
 
+      <section id="section-filme" class="section-conteudo full">
+        <h2 class="full">O Filme</h2>
+        <div class="livro">
+          <div class="livro-capa">
+            <img
+              src="./imagens/posters/filme4.png"
+              alt="poster do filme Harry Potter e o Cálice de Fogo"
+            />
+          </div>
+          <div class="livro-info">
+            <div class="livro-info-line">
+              <h4>Direção/Produção/Roteiro</h4>
+              <p>Mike Newell</p>
+              <p>David Heyman</p>
+              <p>Steven Kloves</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Elenco principal:</h4>
+              <p>Daniel Radcliffe</p>
+              <p>Emma Watson</p>
+              <p>Rupert Grint</p>
+              <p>Ralph Fiennes</p>
+              <p>Robert Pattinson</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Lançamento:</h4>
+              <p>Reino Unido/EUA: 18 de novembro de 2005</p>
+              <p>Brasil: 25 de novembro de 2005</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Duração:</h4>
+              <p>157 min</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Orçamento:</h4>
+              <p>US$ 150 milhões</p>
+            </div>
+            <br />
+            <div class="livro-info-line">
+              <h4>Receita:</h4>
+              <p>US$ 897 milhões</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-conteudo full">
+        <h2 class="full">Trailer</h2>
+        <iframe
+          width="700"
+          height="465"
+          src="https://www.youtube.com/embed/rnX4KxsaoRQ"
+          title="Trailer de &#39;Harry Potter e o Cálice de Fogo&#39;  legendado"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="section-curiosidades" class="section-conteudo full">
+        <h2 class="full">Curiosidades</h2>
+        <ol class="curiosidades">
+          <li>
+            O torneio Tribruxo, que é uma parte importante da trama deste livro,
+            foi inspirado em uma tradição escocesa chamada Highland Games, onde
+            os competidores participam de uma série de eventos físicos e
+            mentais. Rowling disse que também se inspirou nos Jogos Olímpicos
+            para criar o torneio.
+          </li>
+          <br />
+          <li>
+            O nome "Cedrico Diggory", um personagem que é introduzido neste
+            livro, foi inspirado em um aluno que J.K. Rowling conheceu quando
+            era professora em Portugal. Ela disse que o nome "soava como um
+            herói" e decidiu usá-lo na história.
+          </li>
+          <br />
+          <li>
+            Este livro contém a morte mais chocante da série: a morte de Cedrico
+            Diggory. Rowling disse que queria mostrar aos leitores que a série
+            não era apenas uma fantasia alegre, mas também poderia ser sombria e
+            realista. A morte de Cedrico também é um ponto crucial na trama da
+            série, pois é o evento que finalmente traz Voldemort de volta à
+            plena força.
+          </li>
+        </ol>
+      </section>
+      <section id="galeria" class="section-conteudo full">
+        <h2 class="full">Galeria de imagens</h2>
+        <div id="slider">
+          <input type="radio" name="slider" id="slide1" checked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <input type="radio" name="slider" id="slide4" />
+          <div id="slides">
+            <div id="overflow">
+              <div class="inner">
+                <div class="slide slide_1">
+                  <div class="slide-content">
+                    <img
+                      src="imagens/Galeria/HP-4-1.png"
+                      alt="cenas filme Harry potter 4"
+                    />
+                  </div>
+                </div>
+                <div class="slide slide_2">
+                  <div class="slide-content">
+                    <img
+                      src="imagens/Galeria/HP-4-2.png"
+                      alt="cenas filme Harry potter 4"
+                    />
+                  </div>
+                </div>
+                <div class="slide slide_3">
+                  <div class="slide-content">
+                    <img
+                      src="imagens/Galeria/HP-4-3.png"
+                      alt="cenas filme Harry potter 4"
+                    />
+                  </div>
+                </div>
+                <div class="slide slide_4">
+                  <div class="slide-content">
+                    <img
+                      src="imagens/Galeria/HP-4-4.png"
+                      alt="cenas filme Harry potter 4"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+          <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <img src="./imagens/footer-selo.png" alt="selo de hogwarts">
-        <p> Copywrite &copy; Harry Potter - 2023</p>
+      <img src="./imagens/footer-selo.png" alt="selo de hogwarts" />
+      <p>Copywrite &copy; Harry Potter - 2023</p>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
