@@ -135,7 +135,7 @@ span .material-symbols-outlined {
   padding-top: 5px;
   padding-bottom: 5px;
   list-style-type: none;
-  cursor: url(/imagens/Nimbus.cur), default;
+  cursor: url(./imagens/Nimbus.cur), default;
 }
 
 .navegacao-conteudo:hover {
@@ -145,7 +145,7 @@ span .material-symbols-outlined {
 .navegacao-conteudo-texto {
   color: #d7dee2;
   text-decoration: none;
-  cursor: url(/imagens/Nimbus.cur), default;
+  cursor: url(./imagens/Nimbus.cur), default;
 }
 
 /* ---------------------------------------Menu navegação */
