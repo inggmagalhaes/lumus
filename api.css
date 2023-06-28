@@ -4,12 +4,13 @@
     margin: 50px auto;
     max-width: 1000px;
     text-align: center;
+    font-family: "EB Garamond", serif;
 }
 
 .container h1 {
 
     color: aliceblue;
-    font-family: "EB Garamond", serif;
+
     font-size: 25px;
     text-transform: uppercase;
     font-weight: normal;
@@ -53,6 +54,7 @@
 
 .character>h4 {
     grid-area: actor;
+    font-weight: normal;
 }
 
 .character>img {
