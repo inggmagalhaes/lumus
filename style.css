@@ -194,6 +194,18 @@ div.assinatura {
   justify-content: flex-end;
 }
 
+div.selo {
+  width: auto;
+  height: 10px;
+}
+
+div.selo img {
+  width: 80px;
+  position: relative;
+  bottom: -5px;
+}
+
+
 footer {
   color: white;
   display: flex;
@@ -202,11 +214,7 @@ footer {
   font-size: 12px;
 }
 
-footer img {
-  width: 80px;
-  position: relative;
-  top: -40px;
-}
+
 
 footer p {
   margin-bottom: 20px;

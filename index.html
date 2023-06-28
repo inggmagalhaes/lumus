@@ -9,7 +9,8 @@
     <meta name="description"
         content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="api.css" />
+
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -91,13 +92,31 @@
             <div class="assinatura">
                 <img src="imagens/Albus.png" alt="assinatura Albus Dumbledore" />
             </div>
+            <div class="selo">
+                <img src="imagens/footer-selo.png" alt="selo de hogwarts" />
+            </div>
         </section>
 
+
     </main>
+    <section class="api">
+        <div class="container">
+            <h1>Busque por personagens da saga</h1>
+            <div id="searchWrapper">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Busque por um personagem" />
+            </div>
+            <ul id="charactersList"></ul>
+        </div>
+    </section>
+
     <footer class="footer">
-        <img src="imagens/footer-selo.png" alt="selo de hogwarts" />
+
         <p class="footer-texto">Copyright &copy Harry Potter 2023</p>
     </footer>
+
+
+    <script src="menu.js"></script>
+    <script src="api.js"></script>
 </body>
 
 </html>
