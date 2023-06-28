@@ -2,6 +2,8 @@
 let charactersList = document.getElementById('charactersList');
 let hpCharacters = [];
 
+
+
 let loadCharacters = async () => {
     try {
         let res = await fetch('https://hp-api.onrender.com/api/characters');
@@ -28,5 +30,13 @@ let displayCharacters = (characters) => {
         .join('');
     charactersList.innerHTML = htmlString;
 };
+
+let filterCharacters = () => {
+    const bar = document.getElementById('searchBar');
+    console.log(hpCharacters)
+    const filtered = hpCharacters.filter(character => character.name.includes(bar.value));
+    displayCharacters(filtered);
+}
+
 
 loadCharacters();

@@ -103,7 +103,9 @@
         <div class="container">
             <h1>Busque por personagens da saga</h1>
             <div id="searchWrapper">
-                <input type="text" name="searchBar" id="searchBar" placeholder="Busque por um personagem" />
+                <input type="text" name="searchBar" id="searchBar"
+                    placeholder="Busque por um personagem...(Case sensitive, utilize a primeira letra maiúscula)"
+                    onChange="filterCharacters()" />
             </div>
             <ul id="charactersList"></ul>
         </div>
