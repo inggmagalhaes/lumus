@@ -332,6 +332,44 @@ footer p {
   }
 }
 
+/* elementos flutuantes */
+
+.elementos-flutuantes {
+  width: 100px;
+  position: absolute;
+  width: 100%;
+}
+
+.elementos-flutuantes a {
+  position: absolute;
+  text-decoration: none;
+}
+
+.elementos-flutuantes img{
+  width: 100px;
+}
+
+#pomo {
+  left: 20%;
+  margin-top: 10px;
+}
+
+#edwiges {
+  left: 6%;
+}
+
+#edwiges>img{
+  width: 150px;
+}
+
+#dobby {
+  right: 6%;
+}
+
+#mapa {
+  right: 20%;
+}
+
 /* 
 @media (max-height: 1400px) {
   .section-conteudo-imagem-assinatura {
