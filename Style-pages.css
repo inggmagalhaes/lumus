@@ -400,6 +400,10 @@ footer p {
     display: block;
   }
 
+  .navegacao-conteudo:hover .dropdown {
+    display: none;
+  }
+
   .main {
     padding: 0 30px 100px 30px;
     position: relative;
