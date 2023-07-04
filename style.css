@@ -343,8 +343,8 @@ footer p {
 .elementos-flutuantes a {
   position: absolute;
   text-decoration: none;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.5s ease-in-out; /* Transition property and duration */
+  opacity: 0; /* Escondido inicialmente */
+  transition: opacity 0.5s ease-in-out; /* Transicao- propriedade e duracao */
 }
 
 .elementos-flutuantes img{
