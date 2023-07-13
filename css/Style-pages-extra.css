@@ -33,6 +33,39 @@ img.animais {
   height: 450px;
 }
 
+.section-conteudo-animais img.quadribol {
+  margin-bottom: 20px;
+}
+
+
+.section-conteudo-animais img.quadribol-bola {
+
+  width: 300px;
+  height: auto;
+
+
+}
+
+.section-conteudo-animais img.maroto-mapa {
+  width: 250px;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.section-conteudo-animais img.maroto {
+  width: 450px;
+  height: auto;
+}
+
+.section-conteudo-animais h2.maroto {
+  margin: 20px 0 30px 0;
+}
+
+.section-conteudo-animais h3 {
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+
 .section-conteudo-animais img,
 h4,
 h2,
@@ -67,7 +100,16 @@ h1 {
     padding: 0 60px 90px 60px;
   }
 
+  .section-conteudo-animais img.maroto {
+    width: 400px;
+    height: auto;
+  }
+
   .section-conteudo-animais img.animais {
+    height: 300px;
+  }
+
+  .section-conteudo-animais img.quadribol {
     height: 300px;
   }
 
@@ -86,6 +128,15 @@ h1 {
   }
 
   .section-conteudo-animais img.animais {
+    height: 200px;
+  }
+
+  .section-conteudo-animais img.maroto {
+    width: 300px;
+    height: auto;
+  }
+
+  .section-conteudo-animais img.quadribol {
     height: 200px;
   }
 

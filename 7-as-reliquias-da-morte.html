@@ -1,495 +1,427 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="Harry Potter, Hogwarts, magia, bruxaria, feitiços,filmes, livros"
-    />
-    <meta
-      name="description"
-      content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!"
-    />
 
-    <link rel="stylesheet" type="text/css" href="Style-pages.css" />
-    <link rel="stylesheet" type="text/css" href="slider.css" />
-    <script src="menu.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond&family=Noto+Serif&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Harry Potter, Hogwarts, magia, bruxaria, feitiços,filmes, livros" />
+  <meta name="description"
+    content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!" />
 
-    <title>Universo HP</title>
-    <link rel="shortcut icon" href="./imagens/favicon.png" />
-  </head>
+  <link rel="stylesheet" type="text/css" href="css/Style-pages.css" />
+  <link rel="stylesheet" type="text/css" href="css/slider.css" />
 
-  <body onresize="mudouTamanho()">
-    <header class="header">
-      <div class="header-imagem">
-        <picture>
-          <source
-            media="(max-width: 768px)"
-            srcset="./imagens/Header/livro7-800.png"
-            type="image/png"
-          />
-          <img
-            src="imagens/Header/LIVRO_7.png"
-            alt=""
-            class="header-imagem-conteudo"
-          />
-        </picture>
-      </div>
-    </header>
-    <div class="menu-icon" onclick="clickMenu()">
-      <div class="center-lines">
-        <div class="line-1"></div>
-        <div class="line-2"></div>
-        <div class="line-3"></div>
-      </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond&family=Noto+Serif&display=swap"
+    rel="stylesheet" />
+
+  <title>Universo HP</title>
+  <link rel="shortcut icon" href="./imagens/favicon.png" />
+</head>
+
+<body onresize="mudouTamanho()">
+  <header class="header">
+    <div class="header-imagem">
+      <picture>
+        <source media="(max-width: 768px)" srcset="./imagens/Header/livro7-800.png" type="image/png" />
+        <img src="imagens/Header/LIVRO_7.png" alt="" class="header-imagem-conteudo" />
+      </picture>
     </div>
-    <nav id="menu" class="navegacao">
-      <ul>
-        <li class="navegacao-conteudo">
-          <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
-        </li>
-        <li class="navegacao-conteudo">
-          <a href="./1-a-pedra-filosofal.html" class="navegacao-conteudo-texto"
-            >A Pedra Filosofal</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a href="./2-a-camara-secreta.html" class="navegacao-conteudo-texto"
-            >A Câmara Secreta</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a
-            href="./3-o-prisioneiro-de-azkaban.html"
-            class="navegacao-conteudo-texto"
-            >O Prisioneiro de Azkaban</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a href="./4-o-calice-de-fogo.html" class="navegacao-conteudo-texto"
-            >O Cálice de Fogo</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a href="./5-a-ordem-da-fenix.html" class="navegacao-conteudo-texto"
-            >A Ordem da Fenix</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a
-            href="./6-o-enigma-do-principe.html"
-            class="navegacao-conteudo-texto"
-            >O Enigma do Principe</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a
-            href="./7-as-reliquias-da-morte.html"
-            class="navegacao-conteudo-texto"
-            >As Relíquias da Morte</a
-          >
-          <ul class="dropdown">
-            <li>
-              <a href="#section-livro" class="navegacao-conteudo-texto"
-                >Livro</a
-              >
-            </li>
-            <li>
-              <a href="#section-filme" class="navegacao-conteudo-texto"
-                >Filme</a
-              >
-            </li>
-            <li>
-              <a href="#section-curiosidades" class="navegacao-conteudo-texto"
-                >Curiosidades</a
-              >
-            </li>
-            <li>
-              <a href="#galeria" class="navegacao-conteudo-texto">Galeria</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
-    <main class="main">
-      <section id="section-livro" class="section-conteudo">
-        <h4>Livro 7</h4>
-        <h1>HARRY POTTER E AS RELIQUIAS DA MORTE</h1>
-
-        <div class="livro">
-          <div class="livro-capa">
-            <img
-              src="./imagens/capas/livro7.png"
-              alt="capa do livro Harry Potter e o Cálice de Fogo"
-            />
-          </div>
-          <div class="livro-info">
-            <div class="livro-info-line">
-              <h4>Autor(a):</h4>
-              <p>J. K. Rowling</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Data de lançamento:</h4>
-              <p>Reino Unido: 21 de julho de 2007</p>
-              <p>Estados Unidos: 21 de julho de 2007</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Nº de páginas</h4>
-              <p>Reino Unido: 607</p>
-              <p>Estados Unidos: 607</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h3>Versão brasileira</h3>
-              <br />
-              <h4>Tradução</h4>
-              <p>Lia Wyler</p>
-              <h4>Editora</h4>
-              <p>Rocco</p>
-              <h4>Lançamento:</h4>
-              <p>13 de novembro de 2007</p>
-              <h4>nº de páginas:</h4>
-              <p>607</p>
-            </div>
-          </div>
-        </div>
-        <h2 class="full">Resumo</h2>
-        <p>
-          "Harry Potter e as Relíquias da Morte" é o sétimo e último livro da
-          série "Harry Potter", escrita por J.K. Rowling. Após a morte de
-          Dumbledore, Voldemort consolida seu apoio e poder no mundo bruxo,
-          incluíndo no Ministério da Magia. Harry é obrigado a abandonar a casa
-          de seus tios e, enquanto está sendo movido para outro local pela Ordem
-          da Fênix, é atacado por Comensais da Morte, o que resulta na morte de
-          "Olho-Tonto" Moody. Ao se prepararem para abandonar Hogwarts e saírem
-          em busca das Hocruxes, Harry, Rony e Hermione herdam estranhos objetos
-          dentre as posses de Dumbledore: o pomo de ouro, um desiluminador e um
-          livro de contos de fadas, respectivamente. Os três são novamente
-          atacados por Comensais da Morte no casamento do irmão de Rony e fogem
-          para o Largo Grimauld, número 12, casa da família de Sirius Black,
-          cuja Harry herdou um ano antes.
-        </p>
-        <br />
-        <p>
-          Graças ao elfo doméstico Monstro, eles descobrem que R.A.B. é o
-          falecido irmão de Sirius e que o medalhão de Salazar Sonserina havia
-          sido roubado e agora está sob posse de Dolores Umbridge. Eles
-          infiltram o Ministério e roubam o medalhão, porém são obrigados a
-          fugir para o interior do país, onde, com falhas tentativas de destruir
-          o medalhão, vivenciam diversas brigas por conta da influência maligna
-          do objeto, resultando na fuga de Rony. Harry e Hermione continuam a
-          busca e vão até Godric’s Hollow, o local de nascimento do garoto e
-          assassinato de seus pais, onde encontra Batilda Bagshot, uma
-          historiadora bruxa que se revela ser Nagini, a cobra de Voldemort,
-          disfarçada. A cobra ataca Harry, que foge novamente junto com a garota
-          para uma floresta, onde descobrem que a varinha do garoto quebrou
-          durante o episódio com Nagini. Na floresta, um misterioso Patrono na
-          forma de uma corsa prateada surge e guia Harry até um lago congelado,
-          onde encontra a espada de Grifinória, um dos únicos objetos capaz de
-          destruir Horcruxes, em seu fundo e, ao tentar alcançá-la, é atacado
-          pela Horcrux e salvo por Rony, que aparece de repente, apanha a espada
-          e destrói o medalhão. Ao identificar um símbolo também usado por
-          Xenofílio Lovegood no casamento em seu livro de contos, Hermione e os
-          dois garotos vão até a casa do pai de Luna e descobrem que o símbolo
-          representa as míticas Relíquias da Morte, três objetos descritos em um
-          conto de fadas intitulado O Conto dos Três Irmãos: a Varinha das
-          Varinhas, uma varinha invencível; a Pedra das Ressurreição, cujo tem
-          poder de convocar os mortos; e uma infalível Capa da Invisibilidade.
-          Harry suspeita que Voldemort esteja em busca da Varinha das Varinhas e
-          confirma sua teoria após ter uma visão de do mesmo roubando a varinha
-          de Dumbledore de seu túmulo.
-        </p>
-        <br />
-        <p>
-          O trio é sequestrado por ladrões e levado para a mansão dos Malfoy,
-          onde Belatriz Lestrange tortura Hermione para descobrir como
-          "roubaram" a espada de seu cofre em Gringotts/Gringotes. Com a ajuda
-          de Dobby, eles escapam junto com Luna, Olivaras, Dino Thomas e o
-          duende Grampo, que se encontravam como prisioneiros. Durante a fuga,
-          Harry desarma e rouba a varinha de Malfoy e Dobby é morto por
-          Belatriz. Por conta da raiva e aflição por parte de Lestrange ao
-          interrogar Hermione, Harry suspeita a presença de uma Horcrux na forma
-          de taça de ouro no cofre e Grampo confirma o palpite. Com a ajuda do
-          duende, eles invadem o cofre, roubam a taça e fogem em um dragão.
-          Harry tem uma visão de Voldemort onde mostra que uma Horcrux está
-          escondida em Hogwarts.
-        </p>
-        <br />
-        <p>
-          Eles adentram a escola por uma passagem secreta e Harry avisa os
-          professores que Voldemort está planejando um ataque à escola. O garoto
-          suspeita que a Horcrux oculta seja o diadema de Corvinal, perdido há
-          séculos. Em uma conversa com a fantasma da casa Corvinal, a mesma
-          confirma a hipótese de Harry, que vai à Sala Precisa para iniciar as
-          buscas. Ao passo que Voldemort penetra o castelo, Rony e Hermione
-          destroem a Taça de Hufflepuff com um dente de basilisco encontrado na
-          Câmara Secreta, vão ao encontro de Harry na sala precisa e destroem o
-          diadema de Corvinal. Personagens como Remo Lupin, Ninfadora Tonks e
-          Fred Weasley morrem na Batalha de Hogwarts.
-        </p>
-        <br />
-        <p>
-          Voldemort sente que a varinha das varinhas não o corresponde
-          perfeitamente e mata Snape, visto que acredita que a varinha o
-          pertence por ter assassinado Dumbledore. Snape entrega a Harry
-          memórias cruciais e ele as visualiza na penseira. É revelado que Snape
-          amava Lílian e, apesar de odiar o pai de Harry, concordou com
-          Dumbldore em proteger o garoto e atuar como agente duplo contra
-          Voldemort. O patrono em forma de corsa que guiou Harry na floresta era
-          Snape, provando estar sempre vigiando-o. Por manipular incorretamente
-          uma das Horcruxes, Dumbledore começa a morrer lentamente e planeja seu
-          "assassinato" com Snape com antecedência para provar sua lealdade a
-          Voldemort. As memórias também explicam que Harry é uma Horcrux que
-          Voldemort nunca planejou criar e que deve morrer nas mãos do mesmo
-          para se tornar finalmente mortal. O garoto se encaminha até a Floresta
-          Proibida, onde é assassinado por Voldemort. Harry acorda em um local
-          parecido com a estação King's Cross e é recebido por Dumbledore, que
-          explica o processo de criação e liquidação da Horcrux dentro de Harry
-          e o concede duas opções: voltar a vida ou "seguir em frente". O garoto
-          retorna e finge estar morto. Voldemort convoca uma trégua em Hogwarts
-          e apresenta o corpo de Harry a todos. Neville Longbottom empunha a
-          espada de Grifinória e decepa a cobra Nagini, deixando Voldemort
-          desprotegido e sem nenhuma Horcrux restante. A batalha recomeça e
-          Harry foge debaixo de sua capa. Num ataque final, Belatriz é morta por
-          Molly Weasley e Harry se revela. O menino que sobreviveu e Voldemort
-          conectam suas varinhas e o bruxo das trevas é finalmente destruído. O
-          protagonista usa a varinha das varinhas para consertar sua antiga e a
-          devolve a relíquia para Alvo Dumbledore.
-        </p>
-      </section>
-
-      <section id="section-filme" class="section-conteudo full">
-        <h2 class="full">O Filmes</h2>
-        <div class="livro">
-          <div class="livro-capa">
-            <img
-              src="./imagens/posters/filme7.png"
-              alt="poster do filme Harry Potter e as Reliquias da Morte parte I"
-            />
-          </div>
-          <div class="livro-info">
-            <div class="livro-info-line">
-              <h4>Direção/Produção/Roteiro</h4>
-              <p>David Yates</p>
-              <p>David Heyman</p>
-              <p>Steven Kloves</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Elenco principal:</h4>
-              <p>Daniel Radcliffe</p>
-              <p>Emma Watson</p>
-              <p>Rupert Grint</p>
-              <p>Ralph Fiennes</p>
-              <p>Bonnie Wright</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Lançamento:</h4>
-              <p>EUA: 19 de novembro de 2010</p>
-              <p>Reino Unido: 18 de novembro de 2010</p></p>
-              <p>Brasil: 19 de novembro de 2010</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Duração:</h4>
-              <p>146 min</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Orçamento:</h4>
-              <p>US$ 250 milhões</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Receita:</h4>
-              <p>US$ 960 milhões</p>
-            </div>
-          </div>
-        </div>
-        <br />
-        <br>
-        <div class="livro">
-          <div class="livro-capa">
-            <img
-              src="./imagens/posters/filme8.png"
-              alt="poster do filme Harry Potter e as Reliquias da Morte parte II"
-            />
-          </div>
-          <div class="livro-info">
-            <div class="livro-info-line">
-              <h4>Direção/Produção/Roteiro</h4>
-              <p>David Yates</p>
-              <p>David Heyman</p>
-              <p>Steven Kloves</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Elenco principal:</h4>
-              <p>Daniel Radcliffe</p>
-              <p>Emma Watson</p>
-              <p>Rupert Grint</p>
-              <p>Ralph Fiennes</p>
-              <p>Maggie Smith</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Lançamento:</h4>
-              <p>Reino Unido: 14 de julho de 2011</p>
-              <p>EUA: 15 de julho de 2011</p>
-              <p>Brasil: 15 de julho de 2011</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Duração:</h4>
-              <p>130 min</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Orçamento:</h4>
-              <p>US$ 250 milhões</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Receita:</h4>
-              <p>US$ 1,342 bilhão</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-conteudo full">
-        <h2 class="full">Trailer</h2>
-        <iframe
-          width="790"
-          height="328"
-          src="https://www.youtube.com/embed/kmXjPbN-rYU"
-          title="Harry Potter e as Relíquias da Morte: Parte 1 - Trailer (dublado) [HD]"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-        <br /><br />
-        <iframe
-          width="790"
-          height="336"
-          src="https://www.youtube.com/embed/E79fa8bLfPA"
-          title="Harry Potter e as Relíquias da Morte: Parte 2 - Trailer 2 (legendado) [HD]"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <section id="section-curiosidades" class="section-conteudo full">
-        <h2 class="full">Curiosidades</h2>
-        <ol class="curiosidades">
+  </header>
+  <div class="menu-icon" onclick="clickMenu()">
+    <div class="center-lines">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+  </div>
+  <nav id="menu" class="navegacao">
+    <ul>
+      <li class="navegacao-conteudo">
+        <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./1-a-pedra-filosofal.html" class="navegacao-conteudo-texto">A Pedra Filosofal</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./2-a-camara-secreta.html" class="navegacao-conteudo-texto">A Câmara Secreta</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./3-o-prisioneiro-de-azkaban.html" class="navegacao-conteudo-texto">O Prisioneiro de Azkaban</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./4-o-calice-de-fogo.html" class="navegacao-conteudo-texto">O Cálice de Fogo</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./5-a-ordem-da-fenix.html" class="navegacao-conteudo-texto">A Ordem da Fenix</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./6-o-enigma-do-principe.html" class="navegacao-conteudo-texto">O Enigma do Principe</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./7-as-reliquias-da-morte.html" class="navegacao-conteudo-texto">As Relíquias da Morte</a>
+        <ul class="dropdown">
           <li>
-            O livro foi lançado em 2007, e a expectativa em torno do lançamento
-            foi enorme. A editora do livro tomou medidas extremas para evitar o
-            vazamento do conteúdo, incluindo o uso de seguranças armados para
-            proteger as cópias do livro e a impressão de código de barras
-            exclusivos para cada loja que vendia o livro.
-            </li>
+            <a href="#section-livro" class="navegacao-conteudo-texto">Livro</a>
+          </li>
+          <li>
+            <a href="#section-filme" class="navegacao-conteudo-texto">Filme</a>
+          </li>
+          <li>
+            <a href="#section-curiosidades" class="navegacao-conteudo-texto">Curiosidades</a>
+          </li>
+          <li>
+            <a href="#galeria" class="navegacao-conteudo-texto">Galeria</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <section id="section-livro" class="section-conteudo">
+      <h4>Livro 7</h4>
+      <h1>HARRY POTTER E AS RELIQUIAS DA MORTE</h1>
+
+      <div class="livro">
+        <div class="livro-capa">
+          <img src="./imagens/capas/livro7.png" alt="capa do livro Harry Potter e o Cálice de Fogo" />
+        </div>
+        <div class="livro-info">
+          <div class="livro-info-line">
+            <h4>Autor(a):</h4>
+            <p>J. K. Rowling</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Data de lançamento:</h4>
+            <p>Reino Unido: 21 de julho de 2007</p>
+            <p>Estados Unidos: 21 de julho de 2007</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Nº de páginas</h4>
+            <p>Reino Unido: 607</p>
+            <p>Estados Unidos: 607</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h3>Versão brasileira</h3>
             <br />
-            <li>
-            Durante a escrita do livro, J.K. Rowling criou um falso título para
-            despistar os fãs e jornalistas que tentavam adivinhar o nome do
-            livro. O título falso era "Harry Potter e o Criador das Trevas
-            Renascido".
-            </li>
-            <br />
-            <li>
-            O epílogo do livro, que mostra Harry e seus amigos como adultos, foi
-            escrito por J.K. Rowling anos antes de ela terminar de escrever o
-            livro. Ela queria ter certeza de que sabia onde a história estava
-            indo antes de escrever o final, mas sabia desde o início como a
-            história terminaria.
-            </li>
-            <br />
-            <li>
-            Quando o livro foi lançado, a editora Scholastic organizou uma série
-            de festas de lançamento em todo o mundo para os fãs da série. Em
-            Nova York, a festa de lançamento aconteceu no Museu de História
-            Natural e contou com atividades temáticas, como uma exibição de
-            animais mágicos e uma caça ao tesouro pelos corredores do museu.
-            </li>
-            
-        </ol>
-      </section>
-      <section id="galeria" class="section-conteudo full">
-        <h2 class="full">Galeria de imagens</h2>
-        <div id="slider">
-          <input type="radio" name="slider" id="slide1" checked />
-          <input type="radio" name="slider" id="slide2" />
-          <input type="radio" name="slider" id="slide3" />
-          <input type="radio" name="slider" id="slide4" />
-          <div id="slides">
-            <div id="overflow">
-              <div class="inner">
-                <div class="slide slide_1">
-                  <div class="slide-content">
-                    <img
-                      src="imagens/Galeria/HP-7-1.png"
-                      alt="cenas filme Harry potter 7"
-                    />
-                  </div>
+            <h4>Tradução</h4>
+            <p>Lia Wyler</p>
+            <h4>Editora</h4>
+            <p>Rocco</p>
+            <h4>Lançamento:</h4>
+            <p>13 de novembro de 2007</p>
+            <h4>nº de páginas:</h4>
+            <p>607</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="full">Resumo</h2>
+      <p>
+        "Harry Potter e as Relíquias da Morte" é o sétimo e último livro da
+        série "Harry Potter", escrita por J.K. Rowling. Após a morte de
+        Dumbledore, Voldemort consolida seu apoio e poder no mundo bruxo,
+        incluíndo no Ministério da Magia. Harry é obrigado a abandonar a casa
+        de seus tios e, enquanto está sendo movido para outro local pela Ordem
+        da Fênix, é atacado por Comensais da Morte, o que resulta na morte de
+        "Olho-Tonto" Moody. Ao se prepararem para abandonar Hogwarts e saírem
+        em busca das Hocruxes, Harry, Rony e Hermione herdam estranhos objetos
+        dentre as posses de Dumbledore: o pomo de ouro, um desiluminador e um
+        livro de contos de fadas, respectivamente. Os três são novamente
+        atacados por Comensais da Morte no casamento do irmão de Rony e fogem
+        para o Largo Grimauld, número 12, casa da família de Sirius Black,
+        cuja Harry herdou um ano antes.
+      </p>
+      <br />
+      <p>
+        Graças ao elfo doméstico Monstro, eles descobrem que R.A.B. é o
+        falecido irmão de Sirius e que o medalhão de Salazar Sonserina havia
+        sido roubado e agora está sob posse de Dolores Umbridge. Eles
+        infiltram o Ministério e roubam o medalhão, porém são obrigados a
+        fugir para o interior do país, onde, com falhas tentativas de destruir
+        o medalhão, vivenciam diversas brigas por conta da influência maligna
+        do objeto, resultando na fuga de Rony. Harry e Hermione continuam a
+        busca e vão até Godric’s Hollow, o local de nascimento do garoto e
+        assassinato de seus pais, onde encontra Batilda Bagshot, uma
+        historiadora bruxa que se revela ser Nagini, a cobra de Voldemort,
+        disfarçada. A cobra ataca Harry, que foge novamente junto com a garota
+        para uma floresta, onde descobrem que a varinha do garoto quebrou
+        durante o episódio com Nagini. Na floresta, um misterioso Patrono na
+        forma de uma corsa prateada surge e guia Harry até um lago congelado,
+        onde encontra a espada de Grifinória, um dos únicos objetos capaz de
+        destruir Horcruxes, em seu fundo e, ao tentar alcançá-la, é atacado
+        pela Horcrux e salvo por Rony, que aparece de repente, apanha a espada
+        e destrói o medalhão. Ao identificar um símbolo também usado por
+        Xenofílio Lovegood no casamento em seu livro de contos, Hermione e os
+        dois garotos vão até a casa do pai de Luna e descobrem que o símbolo
+        representa as míticas Relíquias da Morte, três objetos descritos em um
+        conto de fadas intitulado O Conto dos Três Irmãos: a Varinha das
+        Varinhas, uma varinha invencível; a Pedra das Ressurreição, cujo tem
+        poder de convocar os mortos; e uma infalível Capa da Invisibilidade.
+        Harry suspeita que Voldemort esteja em busca da Varinha das Varinhas e
+        confirma sua teoria após ter uma visão de do mesmo roubando a varinha
+        de Dumbledore de seu túmulo.
+      </p>
+      <br />
+      <p>
+        O trio é sequestrado por ladrões e levado para a mansão dos Malfoy,
+        onde Belatriz Lestrange tortura Hermione para descobrir como
+        "roubaram" a espada de seu cofre em Gringotts/Gringotes. Com a ajuda
+        de Dobby, eles escapam junto com Luna, Olivaras, Dino Thomas e o
+        duende Grampo, que se encontravam como prisioneiros. Durante a fuga,
+        Harry desarma e rouba a varinha de Malfoy e Dobby é morto por
+        Belatriz. Por conta da raiva e aflição por parte de Lestrange ao
+        interrogar Hermione, Harry suspeita a presença de uma Horcrux na forma
+        de taça de ouro no cofre e Grampo confirma o palpite. Com a ajuda do
+        duende, eles invadem o cofre, roubam a taça e fogem em um dragão.
+        Harry tem uma visão de Voldemort onde mostra que uma Horcrux está
+        escondida em Hogwarts.
+      </p>
+      <br />
+      <p>
+        Eles adentram a escola por uma passagem secreta e Harry avisa os
+        professores que Voldemort está planejando um ataque à escola. O garoto
+        suspeita que a Horcrux oculta seja o diadema de Corvinal, perdido há
+        séculos. Em uma conversa com a fantasma da casa Corvinal, a mesma
+        confirma a hipótese de Harry, que vai à Sala Precisa para iniciar as
+        buscas. Ao passo que Voldemort penetra o castelo, Rony e Hermione
+        destroem a Taça de Hufflepuff com um dente de basilisco encontrado na
+        Câmara Secreta, vão ao encontro de Harry na sala precisa e destroem o
+        diadema de Corvinal. Personagens como Remo Lupin, Ninfadora Tonks e
+        Fred Weasley morrem na Batalha de Hogwarts.
+      </p>
+      <br />
+      <p>
+        Voldemort sente que a varinha das varinhas não o corresponde
+        perfeitamente e mata Snape, visto que acredita que a varinha o
+        pertence por ter assassinado Dumbledore. Snape entrega a Harry
+        memórias cruciais e ele as visualiza na penseira. É revelado que Snape
+        amava Lílian e, apesar de odiar o pai de Harry, concordou com
+        Dumbldore em proteger o garoto e atuar como agente duplo contra
+        Voldemort. O patrono em forma de corsa que guiou Harry na floresta era
+        Snape, provando estar sempre vigiando-o. Por manipular incorretamente
+        uma das Horcruxes, Dumbledore começa a morrer lentamente e planeja seu
+        "assassinato" com Snape com antecedência para provar sua lealdade a
+        Voldemort. As memórias também explicam que Harry é uma Horcrux que
+        Voldemort nunca planejou criar e que deve morrer nas mãos do mesmo
+        para se tornar finalmente mortal. O garoto se encaminha até a Floresta
+        Proibida, onde é assassinado por Voldemort. Harry acorda em um local
+        parecido com a estação King's Cross e é recebido por Dumbledore, que
+        explica o processo de criação e liquidação da Horcrux dentro de Harry
+        e o concede duas opções: voltar a vida ou "seguir em frente". O garoto
+        retorna e finge estar morto. Voldemort convoca uma trégua em Hogwarts
+        e apresenta o corpo de Harry a todos. Neville Longbottom empunha a
+        espada de Grifinória e decepa a cobra Nagini, deixando Voldemort
+        desprotegido e sem nenhuma Horcrux restante. A batalha recomeça e
+        Harry foge debaixo de sua capa. Num ataque final, Belatriz é morta por
+        Molly Weasley e Harry se revela. O menino que sobreviveu e Voldemort
+        conectam suas varinhas e o bruxo das trevas é finalmente destruído. O
+        protagonista usa a varinha das varinhas para consertar sua antiga e a
+        devolve a relíquia para Alvo Dumbledore.
+      </p>
+    </section>
+
+    <section id="section-filme" class="section-conteudo full">
+      <h2 class="full">O Filmes</h2>
+      <div class="livro">
+        <div class="livro-capa">
+          <img src="./imagens/posters/filme7.png" alt="poster do filme Harry Potter e as Reliquias da Morte parte I" />
+        </div>
+        <div class="livro-info">
+          <div class="livro-info-line">
+            <h4>Direção/Produção/Roteiro</h4>
+            <p>David Yates</p>
+            <p>David Heyman</p>
+            <p>Steven Kloves</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Elenco principal:</h4>
+            <p>Daniel Radcliffe</p>
+            <p>Emma Watson</p>
+            <p>Rupert Grint</p>
+            <p>Ralph Fiennes</p>
+            <p>Bonnie Wright</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Lançamento:</h4>
+            <p>EUA: 19 de novembro de 2010</p>
+            <p>Reino Unido: 18 de novembro de 2010</p>
+            </p>
+            <p>Brasil: 19 de novembro de 2010</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Duração:</h4>
+            <p>146 min</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Orçamento:</h4>
+            <p>US$ 250 milhões</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Receita:</h4>
+            <p>US$ 960 milhões</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br>
+      <div class="livro">
+        <div class="livro-capa">
+          <img src="./imagens/posters/filme8.png" alt="poster do filme Harry Potter e as Reliquias da Morte parte II" />
+        </div>
+        <div class="livro-info">
+          <div class="livro-info-line">
+            <h4>Direção/Produção/Roteiro</h4>
+            <p>David Yates</p>
+            <p>David Heyman</p>
+            <p>Steven Kloves</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Elenco principal:</h4>
+            <p>Daniel Radcliffe</p>
+            <p>Emma Watson</p>
+            <p>Rupert Grint</p>
+            <p>Ralph Fiennes</p>
+            <p>Maggie Smith</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Lançamento:</h4>
+            <p>Reino Unido: 14 de julho de 2011</p>
+            <p>EUA: 15 de julho de 2011</p>
+            <p>Brasil: 15 de julho de 2011</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Duração:</h4>
+            <p>130 min</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Orçamento:</h4>
+            <p>US$ 250 milhões</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Receita:</h4>
+            <p>US$ 1,342 bilhão</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-conteudo full">
+      <h2 class="full">Trailer</h2>
+      <iframe width="790" height="328" src="https://www.youtube.com/embed/kmXjPbN-rYU"
+        title="Harry Potter e as Relíquias da Morte: Parte 1 - Trailer (dublado) [HD]" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <br /><br />
+      <iframe width="790" height="336" src="https://www.youtube.com/embed/E79fa8bLfPA"
+        title="Harry Potter e as Relíquias da Morte: Parte 2 - Trailer 2 (legendado) [HD]" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+    <section id="section-curiosidades" class="section-conteudo full">
+      <h2 class="full">Curiosidades</h2>
+      <ol class="curiosidades">
+        <li>
+          O livro foi lançado em 2007, e a expectativa em torno do lançamento
+          foi enorme. A editora do livro tomou medidas extremas para evitar o
+          vazamento do conteúdo, incluindo o uso de seguranças armados para
+          proteger as cópias do livro e a impressão de código de barras
+          exclusivos para cada loja que vendia o livro.
+        </li>
+        <br />
+        <li>
+          Durante a escrita do livro, J.K. Rowling criou um falso título para
+          despistar os fãs e jornalistas que tentavam adivinhar o nome do
+          livro. O título falso era "Harry Potter e o Criador das Trevas
+          Renascido".
+        </li>
+        <br />
+        <li>
+          O epílogo do livro, que mostra Harry e seus amigos como adultos, foi
+          escrito por J.K. Rowling anos antes de ela terminar de escrever o
+          livro. Ela queria ter certeza de que sabia onde a história estava
+          indo antes de escrever o final, mas sabia desde o início como a
+          história terminaria.
+        </li>
+        <br />
+        <li>
+          Quando o livro foi lançado, a editora Scholastic organizou uma série
+          de festas de lançamento em todo o mundo para os fãs da série. Em
+          Nova York, a festa de lançamento aconteceu no Museu de História
+          Natural e contou com atividades temáticas, como uma exibição de
+          animais mágicos e uma caça ao tesouro pelos corredores do museu.
+        </li>
+
+      </ol>
+    </section>
+    <section id="galeria" class="section-conteudo full">
+      <h2 class="full">Galeria de imagens</h2>
+      <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_1">
+                <div class="slide-content">
+                  <img src="imagens/Galeria/HP-7-1.png" alt="cenas filme Harry potter 7" />
                 </div>
-                <div class="slide slide_2">
-                  <div class="slide-content">
-                    <img
-                      src="imagens/Galeria/HP-7-2.png"
-                      alt="cenas filme Harry potter 7"
-                    />
-                  </div>
+              </div>
+              <div class="slide slide_2">
+                <div class="slide-content">
+                  <img src="imagens/Galeria/HP-7-2.png" alt="cenas filme Harry potter 7" />
                 </div>
-                <div class="slide slide_3">
-                  <div class="slide-content">
-                    <img
-                      src="imagens/Galeria/HP-7-3.png"
-                      alt="cenas filme Harry potter 7"
-                    />
-                  </div>
+              </div>
+              <div class="slide slide_3">
+                <div class="slide-content">
+                  <img src="imagens/Galeria/HP-7-3.png" alt="cenas filme Harry potter 7" />
                 </div>
-                <div class="slide slide_4">
-                  <div class="slide-content">
-                    <img
-                      src="imagens/Galeria/HP-7-4.png"
-                      alt="cenas filme Harry potter 7"
-                    />
-                  </div>
+              </div>
+              <div class="slide slide_4">
+                <div class="slide-content">
+                  <img src="imagens/Galeria/HP-7-4.png" alt="cenas filme Harry potter 7" />
                 </div>
               </div>
             </div>
           </div>
-          <div id="controls">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
-            <label for="slide4"></label>
-          </div>
-          <div id="bullets">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
-            <label for="slide4"></label>
-          </div>
         </div>
-      </section>
-    </main>
+        <div id="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <img src="./imagens/footer-selo.png" alt="selo de hogwarts" />
-      <p>Copywrite &copy; Harry Potter - 2023</p>
-    </footer>
-  </body>
+  <footer>
+    <img src="./imagens/footer-selo.png" alt="selo de hogwarts" />
+    <p>Copywrite &copy; Harry Potter - 2023</p>
+  </footer>
+  <script src="js/menu.js"></script>
+</body>
+
 </html>

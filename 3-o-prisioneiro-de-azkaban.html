@@ -1,439 +1,378 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="Harry Potter, Hogwarts, magia, bruxaria, feitiços,filmes, livros"
-    />
-    <meta
-      name="description"
-      content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!"
-    />
 
-    <link rel="stylesheet" type="text/css" href="Style-pages.css" />
-    <link rel="stylesheet" type="text/css" href="slider.css" />
-    <script src="menu.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond&family=Noto+Serif&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Harry Potter, Hogwarts, magia, bruxaria, feitiços,filmes, livros" />
+  <meta name="description"
+    content="Conteúdo exclusivo sobre a saga de Harry Potter: Resumo, trailer, curiosidades, fotos e mais!" />
 
-    <title>Universo HP</title>
-    <link rel="shortcut icon" href="./imagens/favicon.png" />
-  </head>
+  <link rel="stylesheet" type="text/css" href="css/Style-pages.css" />
+  <link rel="stylesheet" type="text/css" href="css/slider.css" />
 
-  <body onresize="mudouTamanho()">
-    <header class="header">
-      <div class="header-imagem">
-        <picture>
-          <source
-            media="(max-width: 768px)"
-            srcset="./imagens/Header/livro3-800.png"
-            type="image/png"
-          />
-          <img
-            src="imagens/Header/LIVRO_3.png"
-            alt=""
-            class="header-imagem-conteudo"
-          />
-        </picture>
-      </div>
-    </header>
-    <div class="menu-icon" onclick="clickMenu()">
-      <div class="center-lines">
-        <div class="line-1"></div>
-        <div class="line-2"></div>
-        <div class="line-3"></div>
-      </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&family=EB+Garamond&family=Noto+Serif&display=swap"
+    rel="stylesheet" />
+
+  <title>Universo HP</title>
+  <link rel="shortcut icon" href="./imagens/favicon.png" />
+</head>
+
+<body onresize="mudouTamanho()">
+  <header class="header">
+    <div class="header-imagem">
+      <picture>
+        <source media="(max-width: 768px)" srcset="./imagens/Header/livro3-800.png" type="image/png" />
+        <img src="imagens/Header/LIVRO_3.png" alt="" class="header-imagem-conteudo" />
+      </picture>
     </div>
-    <nav id="menu" class="navegacao">
-      <ul>
-        <li class="navegacao-conteudo">
-          <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
-        </li>
-        <li class="navegacao-conteudo">
-          <a href="./1-a-pedra-filosofal.html" class="navegacao-conteudo-texto"
-            >A Pedra Filosofal</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a href="./2-a-camara-secreta.html" class="navegacao-conteudo-texto"
-            >A Câmara Secreta</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a
-            href="./3-o-prisioneiro-de-azkaban.html"
-            class="navegacao-conteudo-texto"
-            >O Prisioneiro de Azkaban</a
-          >
-          <ul class="dropdown">
-            <li>
-              <a href="#section-livro" class="navegacao-conteudo-texto"
-                >Livro</a
-              >
-            </li>
-            <li>
-              <a href="#section-filme" class="navegacao-conteudo-texto"
-                >Filme</a
-              >
-            </li>
-            <li>
-              <a href="#section-curiosidades" class="navegacao-conteudo-texto"
-                >Curiosidades</a
-              >
-            </li>
-            <li>
-              <a href="#galeria" class="navegacao-conteudo-texto">Galeria</a>
-            </li>
-          </ul>
-        </li>
-        <li class="navegacao-conteudo">
-          <a href="./4-o-calice-de-fogo.html" class="navegacao-conteudo-texto"
-            >O Cálice de Fogo</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a href="./5-a-ordem-da-fenix.html" class="navegacao-conteudo-texto"
-            >A Ordem da Fenix</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a
-            href="./6-o-enigma-do-principe.html"
-            class="navegacao-conteudo-texto"
-            >O Enigma do Principe</a
-          >
-        </li>
-        <li class="navegacao-conteudo">
-          <a
-            href="./7-as-reliquias-da-morte.html"
-            class="navegacao-conteudo-texto"
-            >As Relíquias da Morte</a
-          >
-        </li>
-      </ul>
-    </nav>
+  </header>
+  <div class="menu-icon" onclick="clickMenu()">
+    <div class="center-lines">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+  </div>
+  <nav id="menu" class="navegacao">
+    <ul>
+      <li class="navegacao-conteudo">
+        <a href="./index.html" class="navegacao-conteudo-texto">Home</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./1-a-pedra-filosofal.html" class="navegacao-conteudo-texto">A Pedra Filosofal</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./2-a-camara-secreta.html" class="navegacao-conteudo-texto">A Câmara Secreta</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./3-o-prisioneiro-de-azkaban.html" class="navegacao-conteudo-texto">O Prisioneiro de Azkaban</a>
+        <ul class="dropdown">
+          <li>
+            <a href="#section-livro" class="navegacao-conteudo-texto">Livro</a>
+          </li>
+          <li>
+            <a href="#section-filme" class="navegacao-conteudo-texto">Filme</a>
+          </li>
+          <li>
+            <a href="#section-curiosidades" class="navegacao-conteudo-texto">Curiosidades</a>
+          </li>
+          <li>
+            <a href="#galeria" class="navegacao-conteudo-texto">Galeria</a>
+          </li>
+        </ul>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./4-o-calice-de-fogo.html" class="navegacao-conteudo-texto">O Cálice de Fogo</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./5-a-ordem-da-fenix.html" class="navegacao-conteudo-texto">A Ordem da Fenix</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./6-o-enigma-do-principe.html" class="navegacao-conteudo-texto">O Enigma do Principe</a>
+      </li>
+      <li class="navegacao-conteudo">
+        <a href="./7-as-reliquias-da-morte.html" class="navegacao-conteudo-texto">As Relíquias da Morte</a>
+      </li>
+    </ul>
+  </nav>
 
-    <main class="main">
-      <section id="section-livro" class="section-conteudo">
-        <h4>Livro 3</h4>
-        <h1>HARRY POTTER E A PEDRA FILOSOFAL</h1>
+  <main class="main">
+    <section id="section-livro" class="section-conteudo">
+      <h4>Livro 3</h4>
+      <h1>HARRY POTTER E A PEDRA FILOSOFAL</h1>
 
-        <div class="livro">
-          <div class="livro-capa">
-            <img
-              src="./imagens/capas/livro3.png"
-              alt="capa do livro Harry Potter e o Prisioneiro de Askaban"
-            />
+      <div class="livro">
+        <div class="livro-capa">
+          <img src="./imagens/capas/livro3.png" alt="capa do livro Harry Potter e o Prisioneiro de Askaban" />
+        </div>
+        <div class="livro-info">
+          <div class="livro-info-line">
+            <h4>Autor(a):</h4>
+            <p>J. K. Rowling</p>
           </div>
-          <div class="livro-info">
-            <div class="livro-info-line">
-              <h4>Autor(a):</h4>
-              <p>J. K. Rowling</p>
-            </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Data de lançamento:</h4>
+            <p>Reino Unido: 8 de julho de 1999</p>
+            <p>Estados Unidos: 8 de setembro de 1999</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Nº de páginas</h4>
+            <p>Reino Unido: 317</p>
+            <p>Estados Unidos: 435</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h3>Versão brasileira</h3>
             <br />
-            <div class="livro-info-line">
-              <h4>Data de lançamento:</h4>
-              <p>Reino Unido: 8 de julho de 1999</p>
-              <p>Estados Unidos: 8 de setembro de 1999</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Nº de páginas</h4>
-              <p>Reino Unido: 317</p>
-              <p>Estados Unidos: 435</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h3>Versão brasileira</h3>
-              <br />
-              <h4>Tradução</h4>
-              <p>Lia Wyler</p>
-              <h4>Editora</h4>
-              <p>Rocco</p>
-              <h4>Lançamento:</h4>
-              <p>1 de dezembro de 2000</p>
-              <h4>nº de páginas:</h4>
-              <p>368</p>
-            </div>
+            <h4>Tradução</h4>
+            <p>Lia Wyler</p>
+            <h4>Editora</h4>
+            <p>Rocco</p>
+            <h4>Lançamento:</h4>
+            <p>1 de dezembro de 2000</p>
+            <h4>nº de páginas:</h4>
+            <p>368</p>
           </div>
         </div>
-        <h2 class="full">Resumo</h2>
-        <p>
-          Harry volta para a casa de seus tios, os Dursley,, onde vê no jornal
-          dos trouxas que um presidiário chamado Sirius Black fugiu. Quando a
-          irmã de seu tio, Guida, os visita e começa a insultar os pais de
-          Harry, ele involuntariamente a transforma em um balão, o que o faz
-          fugir de casa e ser resgatado pelo Nôitibus Andante. Ele viaja até o
-          Beco Diagonal, onde encontra Cornélio Fudge, o Ministro da Magia, que
-          pede a Harry que permaneça no local até o começo das aulas em
-          Hogwarts.
-        </p>
-        <br />
-        <p>
-          Uma noite antes de voltar a escola, Harry ouve que o fugitivo Sirius
-          Black é um assassino e um dos aliados de Lord Voldemort, e que agora
-          estaria atrás do garoto. No caminho para Hogwarts, um Dementador
-          (criatura que suga almas) embarca no trem e faz Harry desmaiar, porém
-          o novo professor de Defesa contra as Artes das Trevas, Remo Lupin,
-          repele o bicho, ajuda e conta a Harry, Rony, Hermione, Neville e Gina
-          à que os Dementadores iriam guardar a escola numa tentativa de
-          proteger os alunos (e principalmente Harry) de Black.
-        </p>
-        <br />
-        <p>
-          Mais tarde, na primeira partida de Quadribol do ano, os Dementadores
-          invadem o campo e acabam fazendo Harry desmaiar novamente. Como ele
-          estava a mais de 15 metros do chão, sua vassoura cai no Salgueiro
-          Lutador e é destruída. Após sair da Ala Hospitalar, Harry pede que
-          Lupin o ensine a como combater os Dementadores, e ele o ensina o
-          feitiço do Patrono.
-        </p>
-        <br />
-        <p>
-          Na segunda visita dos alunos do terceiro ano à Hogsmeade, Fred e
-          George dão a Harry o Mapa do Maroto, que mostra todos os lugares e
-          pessoas de Hogwarts. Então Harry vai, sem autorização, a Hogsmeade
-          usando uma das passagens secretas mostradas no mapa. Lá, ele ouve
-          alguns de seus professores conversando com Fudge sobre Black, dizendo
-          que, além de ter matado treze trouxas e seu ex-amigo Pedro Pettigrew
-          com um só feitiço, o fugitivo era o melhor amigo dos pais de Harry,
-          porém havia os traído entregado seu paradeiro a Voldemort.
-        </p>
-        <br />
-        <p>
-          A amizade de Rony e Hermione enfraquece quando o garoto acusa
-          Bichento, o gato de Hermione, de ter comido seu rato Perebas. No
-          Natal, Harry recebe a vassoura mais moderna e cara que existe, a
-          Firebolt, de um remetente desconhecido. Temendo que a vassoura pudesse
-          estar enfeitiçada, Hermione procura a professora McGonagall, que
-          confisca o objeto e faz Harry e Rony ficarem bravos com ela.
-        </p>
-        <br />
-        <p>
-          Harry, Rony e Hermione tentar ajudar Hagrid a salvar Bicuço, um
-          hipogrifo, de ser executado por atacar Draco Malfoy após ser provocado
-          por ele. Seus esforços acabam não funcionando, e após ouvirem o animal
-          ser morto, Perebas reaparece e tenta fugir novamente. Rony o segue e
-          acaba sendo atacado por um grande cão preto, que Harry já havia visto
-          diversas vezes. O cão arrasta Rony por um túnel debaixo do Salgueiro
-          Lutador que o leva para a Casa dos Gritos. Harry e Hermione os seguem
-          e encontram Rony e Sirius Black, o cão preto. Lupin entra no cômodo e
-          explica a situação a Harry e seus amigos: Lupin é um lobisomem, o que
-          fez Tiago Potter, Sirius Black e Pedro Pettigrew se transformarem em
-          animagos, e que Perebas é na verdade Pettigrew em sua forma animal;
-          ele tem se escondido de Sirius desde a noite da morte dos pais de
-          Harry, quando culpou Sirius pela morte dos treze trouxas e dos pais de
-          Harry.
-        </p>
-        <br />
-        <p>
-          Snape aparece para prender Black, e Harry o atinge com um feitiço que
-          tira sua consciência. Lupin e Sirius transformam Pettigrew em humano
-          para poderem matá-lo, porém Harry os detém, dizendo que seu pai não
-          iria querer isso. Enquanto voltavam para o castelo, Lupin se
-          transforma em lobisomem. Pettigrew escapa novamente e Sirius se
-          transforma em cão para proteger os garotos de Remo.
-        </p>
-        <br />
-        <p>
-          Quando eles acordam no hospital, Harry, Rony e Hermione são informados
-          que Sirius foi sentenciado a receber o Beijo do Dementador, que remove
-          a alma do indivíduo por completo. Dumbledore aconselha Harry e
-          Hermione a usarem o Vira-tempo, um objeto que a garota recebeu da
-          professora McGonagall para assistir a todas as aulas; o utensílio
-          permite que eles voltem no tempo para salvar Black. Quando Hermione
-          gira o Vira-tempo, eles voltam um pouco antes de executarem Bicuço.
-          Após salvarem o hipogrifo da morte, Harry e Hermione esperam Lupin se
-          transformar em lobisomem para atraí-lo até a floresta, fazendo com que
-          Sirius possa fugir. Quando os garotos encontram Black, ele está sendo
-          atacado por vários Dementadores, o que faz Harry usar o feitiço do
-          Patrono que aprendeu com Lupin e salvar o ex-prisioneiro, que voou
-          para longe com Bicuço.
-        </p>
-      </section>
+      </div>
+      <h2 class="full">Resumo</h2>
+      <p>
+        Harry volta para a casa de seus tios, os Dursley,, onde vê no jornal
+        dos trouxas que um presidiário chamado Sirius Black fugiu. Quando a
+        irmã de seu tio, Guida, os visita e começa a insultar os pais de
+        Harry, ele involuntariamente a transforma em um balão, o que o faz
+        fugir de casa e ser resgatado pelo Nôitibus Andante. Ele viaja até o
+        Beco Diagonal, onde encontra Cornélio Fudge, o Ministro da Magia, que
+        pede a Harry que permaneça no local até o começo das aulas em
+        Hogwarts.
+      </p>
+      <br />
+      <p>
+        Uma noite antes de voltar a escola, Harry ouve que o fugitivo Sirius
+        Black é um assassino e um dos aliados de Lord Voldemort, e que agora
+        estaria atrás do garoto. No caminho para Hogwarts, um Dementador
+        (criatura que suga almas) embarca no trem e faz Harry desmaiar, porém
+        o novo professor de Defesa contra as Artes das Trevas, Remo Lupin,
+        repele o bicho, ajuda e conta a Harry, Rony, Hermione, Neville e Gina
+        à que os Dementadores iriam guardar a escola numa tentativa de
+        proteger os alunos (e principalmente Harry) de Black.
+      </p>
+      <br />
+      <p>
+        Mais tarde, na primeira partida de Quadribol do ano, os Dementadores
+        invadem o campo e acabam fazendo Harry desmaiar novamente. Como ele
+        estava a mais de 15 metros do chão, sua vassoura cai no Salgueiro
+        Lutador e é destruída. Após sair da Ala Hospitalar, Harry pede que
+        Lupin o ensine a como combater os Dementadores, e ele o ensina o
+        feitiço do Patrono.
+      </p>
+      <br />
+      <p>
+        Na segunda visita dos alunos do terceiro ano à Hogsmeade, Fred e
+        George dão a Harry o Mapa do Maroto, que mostra todos os lugares e
+        pessoas de Hogwarts. Então Harry vai, sem autorização, a Hogsmeade
+        usando uma das passagens secretas mostradas no mapa. Lá, ele ouve
+        alguns de seus professores conversando com Fudge sobre Black, dizendo
+        que, além de ter matado treze trouxas e seu ex-amigo Pedro Pettigrew
+        com um só feitiço, o fugitivo era o melhor amigo dos pais de Harry,
+        porém havia os traído entregado seu paradeiro a Voldemort.
+      </p>
+      <br />
+      <p>
+        A amizade de Rony e Hermione enfraquece quando o garoto acusa
+        Bichento, o gato de Hermione, de ter comido seu rato Perebas. No
+        Natal, Harry recebe a vassoura mais moderna e cara que existe, a
+        Firebolt, de um remetente desconhecido. Temendo que a vassoura pudesse
+        estar enfeitiçada, Hermione procura a professora McGonagall, que
+        confisca o objeto e faz Harry e Rony ficarem bravos com ela.
+      </p>
+      <br />
+      <p>
+        Harry, Rony e Hermione tentar ajudar Hagrid a salvar Bicuço, um
+        hipogrifo, de ser executado por atacar Draco Malfoy após ser provocado
+        por ele. Seus esforços acabam não funcionando, e após ouvirem o animal
+        ser morto, Perebas reaparece e tenta fugir novamente. Rony o segue e
+        acaba sendo atacado por um grande cão preto, que Harry já havia visto
+        diversas vezes. O cão arrasta Rony por um túnel debaixo do Salgueiro
+        Lutador que o leva para a Casa dos Gritos. Harry e Hermione os seguem
+        e encontram Rony e Sirius Black, o cão preto. Lupin entra no cômodo e
+        explica a situação a Harry e seus amigos: Lupin é um lobisomem, o que
+        fez Tiago Potter, Sirius Black e Pedro Pettigrew se transformarem em
+        animagos, e que Perebas é na verdade Pettigrew em sua forma animal;
+        ele tem se escondido de Sirius desde a noite da morte dos pais de
+        Harry, quando culpou Sirius pela morte dos treze trouxas e dos pais de
+        Harry.
+      </p>
+      <br />
+      <p>
+        Snape aparece para prender Black, e Harry o atinge com um feitiço que
+        tira sua consciência. Lupin e Sirius transformam Pettigrew em humano
+        para poderem matá-lo, porém Harry os detém, dizendo que seu pai não
+        iria querer isso. Enquanto voltavam para o castelo, Lupin se
+        transforma em lobisomem. Pettigrew escapa novamente e Sirius se
+        transforma em cão para proteger os garotos de Remo.
+      </p>
+      <br />
+      <p>
+        Quando eles acordam no hospital, Harry, Rony e Hermione são informados
+        que Sirius foi sentenciado a receber o Beijo do Dementador, que remove
+        a alma do indivíduo por completo. Dumbledore aconselha Harry e
+        Hermione a usarem o Vira-tempo, um objeto que a garota recebeu da
+        professora McGonagall para assistir a todas as aulas; o utensílio
+        permite que eles voltem no tempo para salvar Black. Quando Hermione
+        gira o Vira-tempo, eles voltam um pouco antes de executarem Bicuço.
+        Após salvarem o hipogrifo da morte, Harry e Hermione esperam Lupin se
+        transformar em lobisomem para atraí-lo até a floresta, fazendo com que
+        Sirius possa fugir. Quando os garotos encontram Black, ele está sendo
+        atacado por vários Dementadores, o que faz Harry usar o feitiço do
+        Patrono que aprendeu com Lupin e salvar o ex-prisioneiro, que voou
+        para longe com Bicuço.
+      </p>
+    </section>
 
-      <section id="section-filme" class="section-conteudo full">
-        <h2 class="full">O Filme</h2>
-        <div class="livro">
-          <div class="livro-capa">
-            <img
-              src="./imagens/posters/filme3.png"
-              alt="poster do filme Harry Potter e o Prisioneiro de Askaban"
-            />
+    <section id="section-filme" class="section-conteudo full">
+      <h2 class="full">O Filme</h2>
+      <div class="livro">
+        <div class="livro-capa">
+          <img src="./imagens/posters/filme3.png" alt="poster do filme Harry Potter e o Prisioneiro de Askaban" />
+        </div>
+        <div class="livro-info">
+          <div class="livro-info-line">
+            <h4>Direção/Produção/Roteiro</h4>
+            <p>Alfonso Cuarón</p>
+            <p>David Heyman</p>
+            <p>Steven Kloves</p>
           </div>
-          <div class="livro-info">
-            <div class="livro-info-line">
-              <h4>Direção/Produção/Roteiro</h4>
-              <p>Alfonso Cuarón</p>
-              <p>David Heyman</p>
-              <p>Steven Kloves</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Elenco principal:</h4>
-              <p>Daniel Radcliffe</p>
-              <p>Emma Watson</p>
-              <p>Rupert Grint</p>
-              <p>Gary Oldman</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Lançamento:</h4>
-              <p>Reino Unido: 31 de maio de 2004</p>
-              <p>EUA: 4 de junho de 2004</p>
-              <p>Brasil: 4 de junho de 2004</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Duração:</h4>
-              <p>142 min</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Orçamento:</h4>
-              <p>US$ 130 milhões</p>
-            </div>
-            <br />
-            <div class="livro-info-line">
-              <h4>Receita:</h4>
-              <p>US$ 796 milhões</p>
-            </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Elenco principal:</h4>
+            <p>Daniel Radcliffe</p>
+            <p>Emma Watson</p>
+            <p>Rupert Grint</p>
+            <p>Gary Oldman</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Lançamento:</h4>
+            <p>Reino Unido: 31 de maio de 2004</p>
+            <p>EUA: 4 de junho de 2004</p>
+            <p>Brasil: 4 de junho de 2004</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Duração:</h4>
+            <p>142 min</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Orçamento:</h4>
+            <p>US$ 130 milhões</p>
+          </div>
+          <br />
+          <div class="livro-info-line">
+            <h4>Receita:</h4>
+            <p>US$ 796 milhões</p>
           </div>
         </div>
-      </section>
-      <section class="section-conteudo full">
-        <h2 class="full">Trailer</h2>
-        <iframe
-          width="716"
-          height="403"
-          src="https://www.youtube.com/embed/e02fwhC6DiQ"
-          title="Harry Potter e o Prisioneiro de Azkaban (2004) | Trailer [Legendado]"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <section id="section-curiosidades" class="section-conteudo full">
-        <h2 class="full">Curiosidades</h2>
-        <ol class="curiosidades">
-          <li>
-            J.K. Rowling começou a escrever o terceiro livro da série enquanto
-            ainda estava promovendo o segundo. Ela teve a ideia de apresentar um
-            personagem importante que seria importante para a história geral da
-            série.
-          </li>
-          <br />
-          <li>
-            O livro apresenta o famoso feitiço "Expecto Patronum", que é usado
-            para repelir os Dementadores. Rowling explicou que o feitiço é
-            baseado em uma antiga crença de que cada pessoa tem um animal
-            guardião que protege sua alma. O patrono é a manifestação corpórea
-            desse animal.
-          </li>
-          <br />
-          <li>
-            O personagem Sirius Black, que é um importante personagem na
-            história deste livro, tem o nome de uma estrela na constelação de
-            Canis Major (o Cão Maior). O nome "Black" também sugere a ideia de
-            um "cão preto", que é um tipo de fantasma ou presságio na cultura
-            britânica.
-          </li>
-          <br />
-          <li>
-            O livro é o único da série a não ter Voldemort como o principal
-            vilão. Em vez disso, o prisioneiro de Azkaban, Sirius Black, é
-            apresentado como o principal antagonista. Rowling disse que queria
-            dar um pouco de folga para Harry e seus amigos antes de trazê-los de
-            volta à luta contra Voldemort nos livros seguintes.
-          </li>
-          <br />
-          <li>
-            A curiosidade de mudar o ator de Dumbledore nos filmes de Harry
-            Potter trouxe uma nova dinâmica à saga. Após a morte de Richard
-            Harris, Michael Gambon assumiu o papel do sábio diretor de Hogwarts.
-            Gambon trouxe uma energia mais enérgica e excêntrica para o
-            personagem, mantendo sua sabedoria e bondade. Embora tenha sido uma
-            transição surpreendente para os fãs, ambos os atores deixaram suas
-            marcas na interpretação de Dumbledore. A mudança permitiu que o
-            legado do personagem fosse honrado e enriqueceu a magia da série.
-            Richard Harris trouxe serenidade nos dois primeiros filmes, enquanto
-            Gambon adicionou sua própria presença marcante nos demais. Juntos,
-            eles tornaram Dumbledore um dos personagens mais memoráveis da
-            franquia.
-          </li>
-        </ol>
-      </section>
-      <section id="galeria" class="section-conteudo full">
-        <h2 class="full">Galeria de imagens</h2>
-        <div id="slider">
-          <input type="radio" name="slider" id="slide1" checked />
-          <input type="radio" name="slider" id="slide2" />
-          <input type="radio" name="slider" id="slide3" />
-          <input type="radio" name="slider" id="slide4" />
-          <div id="slides">
-            <div id="overflow">
-              <div class="inner">
-                <div class="slide slide_1">
-                  <div class="slide-content">
-                    <img
-                      src="imagens/Galeria/HP-3-1.png"
-                      alt="cenas filme Harry potter 1"
-                    />
-                  </div>
+      </div>
+    </section>
+    <section class="section-conteudo full">
+      <h2 class="full">Trailer</h2>
+      <iframe width="716" height="403" src="https://www.youtube.com/embed/e02fwhC6DiQ"
+        title="Harry Potter e o Prisioneiro de Azkaban (2004) | Trailer [Legendado]" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+    <section id="section-curiosidades" class="section-conteudo full">
+      <h2 class="full">Curiosidades</h2>
+      <ol class="curiosidades">
+        <li>
+          J.K. Rowling começou a escrever o terceiro livro da série enquanto
+          ainda estava promovendo o segundo. Ela teve a ideia de apresentar um
+          personagem importante que seria importante para a história geral da
+          série.
+        </li>
+        <br />
+        <li>
+          O livro apresenta o famoso feitiço "Expecto Patronum", que é usado
+          para repelir os Dementadores. Rowling explicou que o feitiço é
+          baseado em uma antiga crença de que cada pessoa tem um animal
+          guardião que protege sua alma. O patrono é a manifestação corpórea
+          desse animal.
+        </li>
+        <br />
+        <li>
+          O personagem Sirius Black, que é um importante personagem na
+          história deste livro, tem o nome de uma estrela na constelação de
+          Canis Major (o Cão Maior). O nome "Black" também sugere a ideia de
+          um "cão preto", que é um tipo de fantasma ou presságio na cultura
+          britânica.
+        </li>
+        <br />
+        <li>
+          O livro é o único da série a não ter Voldemort como o principal
+          vilão. Em vez disso, o prisioneiro de Azkaban, Sirius Black, é
+          apresentado como o principal antagonista. Rowling disse que queria
+          dar um pouco de folga para Harry e seus amigos antes de trazê-los de
+          volta à luta contra Voldemort nos livros seguintes.
+        </li>
+        <br />
+        <li>
+          A curiosidade de mudar o ator de Dumbledore nos filmes de Harry
+          Potter trouxe uma nova dinâmica à saga. Após a morte de Richard
+          Harris, Michael Gambon assumiu o papel do sábio diretor de Hogwarts.
+          Gambon trouxe uma energia mais enérgica e excêntrica para o
+          personagem, mantendo sua sabedoria e bondade. Embora tenha sido uma
+          transição surpreendente para os fãs, ambos os atores deixaram suas
+          marcas na interpretação de Dumbledore. A mudança permitiu que o
+          legado do personagem fosse honrado e enriqueceu a magia da série.
+          Richard Harris trouxe serenidade nos dois primeiros filmes, enquanto
+          Gambon adicionou sua própria presença marcante nos demais. Juntos,
+          eles tornaram Dumbledore um dos personagens mais memoráveis da
+          franquia.
+        </li>
+      </ol>
+    </section>
+    <section id="galeria" class="section-conteudo full">
+      <h2 class="full">Galeria de imagens</h2>
+      <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_1">
+                <div class="slide-content">
+                  <img src="imagens/Galeria/HP-3-1.png" alt="cenas filme Harry potter 1" />
                 </div>
-                <div class="slide slide_2">
-                  <div class="slide-content">
-                    <img
-                      src="imagens/Galeria/HP-3-2.png"
-                      alt="cenas filme Harry potter 1"
-                    />
-                  </div>
+              </div>
+              <div class="slide slide_2">
+                <div class="slide-content">
+                  <img src="imagens/Galeria/HP-3-2.png" alt="cenas filme Harry potter 1" />
                 </div>
-                <div class="slide slide_3">
-                  <div class="slide-content">
-                    <img
-                      src="imagens/Galeria/HP-3-3.png"
-                      alt="cenas filme Harry potter 1"
-                    />
-                  </div>
+              </div>
+              <div class="slide slide_3">
+                <div class="slide-content">
+                  <img src="imagens/Galeria/HP-3-3.png" alt="cenas filme Harry potter 1" />
                 </div>
-                <div class="slide slide_4">
-                  <div class="slide-content">
-                    <img
-                      src="imagens/Galeria/HP-3-4.png"
-                      alt="cenas filme Harry potter 1"
-                    />
-                  </div>
+              </div>
+              <div class="slide slide_4">
+                <div class="slide-content">
+                  <img src="imagens/Galeria/HP-3-4.png" alt="cenas filme Harry potter 1" />
                 </div>
               </div>
             </div>
           </div>
-          <div id="controls">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
-            <label for="slide4"></label>
-          </div>
-          <div id="bullets">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
-            <label for="slide4"></label>
-          </div>
         </div>
-      </section>
-    </main>
+        <div id="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <img src="./imagens/footer-selo.png" alt="selo de hogwarts" />
-      <p>Copywrite &copy; Harry Potter - 2023</p>
-    </footer>
-  </body>
+  <footer>
+    <img src="./imagens/footer-selo.png" alt="selo de hogwarts" />
+    <p>Copywrite &copy; Harry Potter - 2023</p>
+  </footer>
+  <script src="js/menu.js"></script>
+</body>
+
 </html>
