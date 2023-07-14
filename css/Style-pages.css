@@ -340,13 +340,21 @@ footer p {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .navegacao ul {
+
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
-    min-width: 500px;
+    min-width: 390px;
   }
 
   h1 {
     font-size: 25px;
+    text-align: center;
   }
 
   .navegacao-conteudo {
@@ -450,7 +458,13 @@ footer p {
   }
 
   .section-conteudo iframe {
-    width: 400px;
+    width: 350px;
     height: 265px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navegacao ul {
+    font-size: 11px;
   }
 }

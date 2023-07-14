@@ -28,6 +28,9 @@ img.animais {
 
 }
 
+.section-conteudo-animais p {
+  justify-content: center;
+}
 
 .section-conteudo-animais img {
   height: 450px;
@@ -119,6 +122,8 @@ h1 {
   }
 }
 
+
+
 @media screen and (max-width: 768px) {
 
   .main-animais {
@@ -128,7 +133,13 @@ h1 {
   }
 
   .section-conteudo-animais img.animais {
-    height: 200px;
+    width: 300px;
+    height: auto;
+  }
+
+  .section-conteudo-animais img.animais-capa {
+    width: 200px;
+    height: auto;
   }
 
   .section-conteudo-animais img.maroto {
@@ -141,7 +152,7 @@ h1 {
   }
 
   .section-conteudo-animais iframe {
-    width: 400px;
+    width: 320px;
     height: 265px;
   }
 }
